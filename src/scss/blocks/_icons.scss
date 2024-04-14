@@ -7,30 +7,31 @@
 .icon {
 	fill: transparent;
 	stroke: transparent;
-	width: 62px;
-	height: 62px;
+	width: 16px;
+	height: 16px;
 }
 
-.icon--heart-line {
-	fill: rgb(241, 68, 131);
+.icon--geo-pin {
+	stroke: black;
 }
 
-.icon--id-card-line {
-	fill: rgb(51, 51, 51);
-}
-.icon--search-line {
-	fill: rgb(28, 176, 80);
-}
-
-.icon--user-star {
-	fill: rgb(26, 134, 235);
+.icon--phone {
+	stroke: black;
+	width: 15px;
+	height: 15px;
 }
 
-.icon--user {
-	stroke: rgb(26, 134, 235);
-	transition: all 0.2s ease-in;
 
-	&:hover {
-		stroke: rgb(17, 193, 90);
-	}
-}
+
+// .icon--user-star {
+// 	fill: rgb(26, 134, 235);
+// }
+
+// .icon--user {
+// 	stroke: rgb(26, 134, 235);
+// 	transition: all 0.2s ease-in;
+
+// 	&:hover {
+// 		stroke: rgb(17, 193, 90);
+// 	}
+// }

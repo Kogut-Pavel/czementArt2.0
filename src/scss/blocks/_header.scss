@@ -2,9 +2,47 @@
     
 }
 
+.header .container {
+    max-width: 1440px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
 .header__nav {
     display: block;
     @include mediaTablet {
         display: none;
     }
+}
+
+.header__geo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 110%;
+    font-size: 14px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cta a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 42px;
+
+}
+
+.cta__btn {
+    height: 42px;
+    padding: 12px 16px;
 }

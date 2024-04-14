@@ -1,11 +1,24 @@
-.header__nav {
-}
 .nav {
-	font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 18px;
 }
 .nav__list {
-	display: flex;
-	column-gap: 30px;
+    display: flex;
+    gap: 30px;
+}
+.nav__list li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #191919;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: var(--link-color);
+    }
 }
 .active {
 }
