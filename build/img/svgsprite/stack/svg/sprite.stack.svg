@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 17 16" id="geo-pin" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 15 15" id="clock" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.5 4.583V7.5m-5.25 0a5.25 5.25 0 1 0 10.5 0 5.25 5.25 0 0 0-10.5 0Z" stroke="#fff" stroke-width="1.167" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 17 16" id="geo-pin" xmlns="http://www.w3.org/2000/svg">
     <path d="M6.5 7.333a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="m12.271 11.105-2.828 2.828a1.334 1.334 0 0 1-1.885 0l-2.83-2.828a5.333 5.333 0 1 1 7.543 0Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 15 16" id="phone" xmlns="http://www.w3.org/2000/svg">
     <path d="M3.125 3h2.5l1.25 3.125-1.563.938a6.875 6.875 0 0 0 3.125 3.125l.938-1.563 3.125 1.25v2.5a1.25 1.25 0 0 1-1.25 1.25A10 10 0 0 1 1.875 4.25 1.25 1.25 0 0 1 3.125 3Z" stroke="#000" stroke-width=".938" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 25 24" id="player-play" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.5 4v16a1 1 0 0 0 1.524.852l13-8a1 1 0 0 0 0-1.704l-13-8A1 1 0 0 0 6.5 4Z" fill="#fff"/>
 </svg></svg>

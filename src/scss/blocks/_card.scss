@@ -18,12 +18,17 @@
 }
 
 .card__tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     backdrop-filter: blur(15.899999618530273px);
     background: rgba(0, 0, 0, 0.35);
     color: #fff;
     border-radius: 16px;
     padding: 8px 14px;
     height: 31px;
+    font-size: 14px;
+    z-index: 4;
 }
 
 .card img {
