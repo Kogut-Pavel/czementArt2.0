@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form input {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    padding: 12px 20px;
+    width: 260px;
+    height: 51px;
+    transition: all 0.2s ease-in;
+    
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent);
+    }
+}
