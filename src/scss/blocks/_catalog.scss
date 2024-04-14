@@ -1,0 +1,52 @@
+.catalog {
+    position: relative;
+    background: var(--section-bg);
+    padding: 92px 0 84px 0;
+}
+
+.catalog__descr {
+    margin-top: 25px;
+    margin-bottom: 46px;
+}
+
+.catalog__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.catalog__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tabs button {
+    color: var(--title-color);
+    background: #fff;
+    &:hover {
+        color: #fff;
+        background: var(--accent);
+    }
+}
+
+.tabs button.active {
+    color: #fff;
+    background: var(--accent);
+}
+
+.catalog__list {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}

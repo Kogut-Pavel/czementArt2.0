@@ -23,3 +23,12 @@
     font-size: 14px;
     color: var(--text-color);
 }
+
+.btn-more {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    background: transparent;
+    &:hover {
+        background: unset;
+    }
+}
