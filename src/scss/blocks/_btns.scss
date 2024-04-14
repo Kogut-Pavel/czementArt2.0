@@ -9,7 +9,8 @@
     transition: all 0.2s ease-in;
 
     &:hover {
-        background: lighten(var(--accent), 8);
+        // background: lighten(var(--accent), 8);
+        background: var(--hover-accent);
     }
 }
 
