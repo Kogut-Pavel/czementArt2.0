@@ -1,35 +1,25 @@
-.title-1 {
-	margin: 1em 0 0.5em;
+.title {
 	font-weight: 500;
-	font-size: 100px;
-	line-height: 90%;
 	color: var(--title-color);
 	font-family: var(--font-titles);
+}
+
+.title-1 {
+	font-size: 100px;
+	line-height: 90%;
 }
 
 .title-2 {
-	margin: 1em 0 0.5em;
-	font-weight: 500;
 	font-size: 80px;
 	line-height: 90%;
-	color: var(--title-color);
-	font-family: var(--font-titles);
 }
 
 .title-3 {
-	margin: 1em 0 0.5em;
-	font-weight: 500;
 	font-size: 44px;
 	line-height: 90%;
-	color: var(--title-color);
-	font-family: var(--font-titles);
 }
 
 .title-4 {
-	margin: 1em 0 0.5em;
-	font-weight: 500;
 	font-size: 24px;
 	line-height: 150%;
-	color: var(--title-color);
-	font-family: var(--font-titles);
 }

@@ -1,0 +1,29 @@
+.hero {
+    position: relative;
+    background-color: var(--section-bg);
+    // background-image: url('../../img/hero/armchair-in-black-living-room-with-copy-space.png');
+    // background-repeat: no-repeat;
+    // background-size: inherit;
+    // background-position: 0% 100%;
+    padding-top: 69px;
+    padding-bottom: 244px;
+}
+
+.hero__title {
+    margin-bottom: 27px;
+}
+
+.hero__text {
+    max-width: 440px;
+    margin-bottom: 51px;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.hero__img-abs {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 40px;
+    pointer-events: none;
+}

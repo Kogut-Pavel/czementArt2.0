@@ -1,13 +1,13 @@
 .btn {
     border-radius: 40px;
     background: var(--accent);
-    line-height: 120%;
+    line-height: 100%;
     color: #fff;
-    padding: 20px;
+    padding: 10px 20px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.2s ease-in;
-
+    height: 51px;
     &:hover {
         // background: lighten(var(--accent), 8);
         background: var(--hover-accent);
