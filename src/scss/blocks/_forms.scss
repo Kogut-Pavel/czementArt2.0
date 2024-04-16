@@ -1,7 +1,9 @@
 .form {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 6px;
+    z-index: 6;
 }
 
 .form input {
