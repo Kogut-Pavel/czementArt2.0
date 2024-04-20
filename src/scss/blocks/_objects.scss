@@ -18,6 +18,15 @@
     position: relative;
 }
 
+.objects__item:hover img {
+    filter: brightness(70%);
+}
+
+.objects__item:hover button {
+    opacity: 1;
+    pointer-events: all;
+}
+
 .objects__item span {
     position: absolute;
     top: 13px;
@@ -31,8 +40,25 @@
     color: #fff;
     border-radius: 16px;
     overflow: hidden;
+    z-index: 3;
+    pointer-events: all;
+    transition: all 0.2s ease-in;
+    
 }
 
 .objects__item img {
     border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.objects__item button {
+    position: absolute;
+    left: 10px;
+    bottom: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.objects .tns-controls {
+    top: -40px;
 }

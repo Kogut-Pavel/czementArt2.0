@@ -21,29 +21,46 @@ import { tns } from 'tiny-slider';
 const catalogLists = document.querySelectorAll('.catalog .catalog__list');
 const catalogListsArr = [];
 
-for (let i = 0; i < catalogLists.length; i++) {
-    let catalog = tns ({
-        container: `.catalog-${i+1}`,
-        items: 3,
-        slideBy: 1,
-        mouseDrag: true,
-        swipeAngle: false,
-        speed: 400,
-        arrowKeys: true,
-        loop: false,
-        controlsText: [
-            '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
-            '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
-        ],
-    });
-
-    catalogListsArr.push(catalog);
+if (catalogLists) {
+    for (let i = 0; i < catalogLists.length; i++) {
+        let catalog = tns ({
+            container: `.catalog-${i+1}`,
+            items: 3,
+            slideBy: 1,
+            mouseDrag: true,
+            swipeAngle: false,
+            speed: 400,
+            arrowKeys: true,
+            loop: false,
+            controlsText: [
+                '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
+                '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+            ],
+        });
     
+        catalogListsArr.push(catalog);
+        
+    }
 }
 
-let trainingSlider = tns({
-    container: `.training__slider`,
-    items: 2,
+// let trainingSlider = tns({
+//     container: `.training__slider`,
+//     items: 2,
+//     slideBy: 1,
+//     mouseDrag: true,
+//     swipeAngle: false,
+//     speed: 400,
+//     arrowKeys: true,
+//     loop: false,
+//     controlsText: [
+//         '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
+//         '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+//     ],
+// });
+
+let objectsSlider = tns({
+    container: `.objects__slider`,
+    items: 4,
     slideBy: 1,
     mouseDrag: true,
     swipeAngle: false,
@@ -55,6 +72,8 @@ let trainingSlider = tns({
         '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
     ],
 });
+
+
 
 
 import tabs from './modules/tabs.js';
