@@ -12,3 +12,6 @@ mobileNav();
 
 import modal from './modules/modal.js';
 modal();
+
+import tabs from './modules/tabs.js';
+tabs();
