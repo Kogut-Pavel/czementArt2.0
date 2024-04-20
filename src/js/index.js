@@ -10,8 +10,39 @@
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
+// Модальные окна
 import modal from './modules/modal.js';
 modal();
+
+// Табы в каталоге
+
+import { tns } from 'tiny-slider';
+
+const catalogLists = document.querySelectorAll('.catalog .catalog__list');
+const catalogListsArr = [];
+
+console.log(catalogLists);
+
+for (let i = 0; i < catalogLists.length; i++) {
+    let catalog = tns ({
+        container: `.catalog-${i+1}`,
+        items: 3,
+        slideBy: 1,
+        mouseDrag: true,
+        swipeAngle: false,
+        speed: 400,
+        arrowKeys: true,
+        loop: false,
+        controlsText: [
+            '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
+            '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+        ],
+    });
+
+    catalogListsArr.push(catalog);
+    
+}
+
 
 import tabs from './modules/tabs.js';
 tabs();
