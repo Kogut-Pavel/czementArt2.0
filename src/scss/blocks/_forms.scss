@@ -13,9 +13,47 @@
     width: 260px;
     height: 51px;
     transition: all 0.2s ease-in;
-    
+
     &:hover,
     &:focus {
         border: 1px solid var(--accent);
+    }
+}
+
+.form#call-order {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form#call-order .form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.form#call-order .form__group input {
+    width: 100%;
+    &::placeholder {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: rgba(41, 41, 41, 0.6);
+    }
+}
+
+.form#call-order .form__btn {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.privacy-policy {
+    text-wrap: wrap;
+    font-size: 13px;
+    color: rgba(25, 25, 25, 0.8);
+    a {
+        color: var(--accent-dark);
+        text-decoration: underline;
     }
 }

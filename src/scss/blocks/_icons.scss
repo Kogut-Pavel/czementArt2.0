@@ -9,6 +9,7 @@
 	stroke: transparent;
 	width: 16px;
 	height: 16px;
+	transition: all 0.2s ease-in;
 }
 
 .icon--geo-pin {
@@ -76,6 +77,15 @@
 	stroke: #fff;
 	width: 17px;
 	height: 17px;
+}
+
+.icon--close {
+	stroke: var(--title-color);
+	width: 24px;
+	height: 24px;
+	&:hover {
+		stroke: var(--accent);
+	}
 }
 
 
