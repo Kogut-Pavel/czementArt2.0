@@ -27,7 +27,8 @@
 }
 
 .consultation__privacy-policy a {
-    color: var(--accent);
+    color: var(--accent-dark);
+    text-decoration: underline;
     line-height: 150%;
 }
 

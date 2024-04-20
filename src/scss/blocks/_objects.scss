@@ -3,6 +3,10 @@
     background: var(--section-bg);
 }
 
+.objects__title {
+    max-width: 50%;
+}
+
 .objects__gallery {
     display: flex;
     align-items: center;

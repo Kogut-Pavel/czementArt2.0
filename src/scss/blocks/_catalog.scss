@@ -33,13 +33,11 @@
     color: var(--title-color);
     background: #fff;
     &:hover {
-        color: #fff;
         background: var(--accent);
     }
 }
 
 .tabs button.active {
-    color: #fff;
     background: var(--accent);
 }
 
