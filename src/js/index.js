@@ -21,8 +21,6 @@ import { tns } from 'tiny-slider';
 const catalogLists = document.querySelectorAll('.catalog .catalog__list');
 const catalogListsArr = [];
 
-console.log(catalogLists);
-
 for (let i = 0; i < catalogLists.length; i++) {
     let catalog = tns ({
         container: `.catalog-${i+1}`,
@@ -42,6 +40,21 @@ for (let i = 0; i < catalogLists.length; i++) {
     catalogListsArr.push(catalog);
     
 }
+
+let trainingSlider = tns({
+    container: `.training__slider`,
+    items: 2,
+    slideBy: 1,
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400,
+    arrowKeys: true,
+    loop: false,
+    controlsText: [
+        '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
+        '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+    ],
+});
 
 
 import tabs from './modules/tabs.js';

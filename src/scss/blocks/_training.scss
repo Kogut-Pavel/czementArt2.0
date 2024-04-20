@@ -11,7 +11,7 @@
 }
 
 .training__inner .item {
-    min-height: 348px;
+    min-height: 352px;
 }
 
 .training__static {
@@ -105,5 +105,10 @@
 .training__card h4 {
     line-height: 130%;
     text-wrap: wrap;
+}
+
+.training .tns-controls {
+    top: unset;
+    bottom: -90px;
 }
 
