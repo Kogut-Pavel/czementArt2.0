@@ -21,6 +21,19 @@
 .title-2 {
 	font-size: 80px;
 	line-height: 90%;
+
+	@include media-L-Laptop {
+		font-size: 60px;
+	}
+	@include mediaLaptop {
+		font-size: 50px;
+	}
+	@include mediaTablet {
+		font-size: 40px;
+	}
+	@include mediaMobile {
+		font-size: 32px;
+	}
 }
 
 .title-3 {

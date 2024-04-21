@@ -3,9 +3,23 @@
     padding: 92px 0 169px 0;
     background: var(--section-bg);
 
+    @include media-L-Laptop {
+        padding: 70px 0 140px 0;
+    }
+    @include mediaLaptop {
+        padding: 50px 0 140px 0;
+    }
+    @include mediaTablet {
+        padding: 32px 0 180px 0;
+    }
 }
 
-
+.consultation__title ,
+.consultation__text,
+.consultation__privacy-policy {
+    position: relative;
+    z-index: 2;
+}
 
 .consultation__title {
     max-width: 590px;
@@ -18,12 +32,40 @@
     font-size: 18px;
     line-height: 150%;
     text-wrap: wrap;
+    @include mediaLaptop {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    @include mediaTablet {
+        margin: 24px 0;
+    }
 }
+
+.consultation__form .btn {
+    @include mediaTablet {
+        max-width: 280px;
+        width: 100%; 
+    }
+}
+
+
 .consultation__privacy-policy {
     max-width: 280px;
     margin-top: 39px;
     text-wrap: wrap;
     color: rgba(25, 25, 25, 0.8);
+    @include mediaLaptop {
+        margin-top: 30px;
+    }
+    @include mediaTablet {
+        // max-width: 240px;
+        margin-top: 24px;
+        font-size: 14px;
+    }
+    @include mediaMobile {
+        font-size: 12px;
+    }
 }
 
 .consultation__privacy-policy a {
@@ -38,6 +80,15 @@
     left: 28%;
     transition: all 0.4s ease-in-out;
     pointer-events: none;
+    @include mediaLaptop {
+        left: 20%;
+    }
+    @include mediaTablet {
+        left: 10%;
+    }
+    @include mediaMobile {
+      left: 0;
+    }
 }
 
 .consultation__img-2 {
@@ -46,6 +97,19 @@
     right: 0;
     transition: all 0.3s ease-in-out;
     pointer-events: none;
+    @include media-L-Laptop {
+        right: -40%;
+    }
+    @include mediaLaptop {
+        max-width: 115%;
+    }
+    @include mediaTablet {
+        max-width: 100%;
+    }
+    @include mediaMobile {
+        max-width: 150%;
+        right: -95%;
+    }
 }
 
 .consultation:hover {
