@@ -7,6 +7,15 @@
 .title-1 {
 	font-size: 100px;
 	line-height: 90%;
+	@include mediaLaptop {
+		font-size: 80px;
+	}
+	@include mediaTablet {
+		font-size: 48px;
+	}
+	@include mediaMobile {
+		font-size: 32px;
+	}
 }
 
 .title-2 {

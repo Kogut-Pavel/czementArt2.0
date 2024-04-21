@@ -10,4 +10,11 @@
     backdrop-filter: blur(15.899999618530273px);
     background: rgba(25, 25, 25, 0.1);
     border-radius: 16px;
+    @include mediaTablet {
+        font-size: 14px;
+    }
+    @include mediaMobile {
+
+        margin-bottom: 24px;
+    }
 }
