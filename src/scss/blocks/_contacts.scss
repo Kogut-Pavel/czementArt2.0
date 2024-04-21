@@ -1,6 +1,11 @@
 .contacts {
     padding: 78px 0;
     background: var(--section-bg);
+    &:hover {
+        .contacts__img {
+            transform: scale(1.05);
+        }
+    }
 }
 
 .contacts__container {
@@ -56,4 +61,5 @@
     right: -80px;
     z-index: 2;
     pointer-events: none;
+    transition: all 0.2s ease-in;
 }

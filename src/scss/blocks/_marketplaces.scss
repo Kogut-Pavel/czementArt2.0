@@ -2,6 +2,12 @@
     padding: 78px 0;
     background: var(--section-bg);
     position: relative;
+
+    &:hover {
+        .marketplaces__img {
+            transform: scale(1.07);
+        }
+    }
 }
 
 .marketplaces__list {
@@ -44,4 +50,5 @@
     right: 0;
     pointer-events: none;
     z-index: 1;
+    transition: all 0.2s ease-in;
 }
