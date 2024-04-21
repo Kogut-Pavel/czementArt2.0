@@ -17,13 +17,14 @@
     @include mediaMobile {
         padding: 5px 0;
     }
+    z-index: 10;
 }
 
 .header__nav {
     display: block;
     @include mediaLaptop {
         order: 1;
-        z-index: 4;
+        z-index: 10;
     }
 }
 
@@ -82,7 +83,7 @@
     @include mediaLaptop {
         border: none;
         order: 3;
-        z-index: 4;
+        z-index: 10;
         span {
             display: none;
         }

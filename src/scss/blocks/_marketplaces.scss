@@ -8,6 +8,24 @@
             transform: scale(1.07);
         }
     }
+
+    @include media-L-Laptop {
+        padding: 70px 0;
+    }
+    @include mediaLaptop {
+        padding: 50px 0;
+    }
+    @include mediaTablet {
+        padding: 40px 0;
+    }
+    @include mediaMobile {
+        padding: 32px 0;
+    }
+}
+
+.marketplaces .title-2 {
+    position: relative;
+    z-index: 2;
 }
 
 .marketplaces__list {
@@ -18,12 +36,33 @@
     gap: 10px;
     margin-top: 40px;
     z-index: 2;
+    @include mediaLaptop {
+        margin-top: 30px;
+    }
+    @include mediaTablet {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 .marketplaces__item {
     padding: 32px;
     background: #fff;
     border-radius: 20px;
+    @include mediaMobile {
+        padding: 21px;
+    }
+}
+
+.marketplaces__item .btn {
+    @include mediaMobile {
+        max-width: 100%;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .marketplaces__icon {
@@ -51,4 +90,7 @@
     pointer-events: none;
     z-index: 1;
     transition: all 0.2s ease-in;
+    @include mediaTablet {
+        max-width: 130%;
+    }
 }
