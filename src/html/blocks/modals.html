@@ -1,5 +1,6 @@
 <!-- html: data-modal="call-modal" -->
 
+<!-- Заказать звонок -->
 <div class="modal" id="call-modal">
     <div class="modal__content">
         <button class="modal__close" type="button">
@@ -25,6 +26,86 @@
 </div>
 
 
+<!-- Подробнее в каталоге -->
+
+<div class="modal" id="detailed-modal">
+    <div class="modal__content">
+        <button class="modal__close" type="button">
+            <svg class="icon icon--close">
+                <use href="../../img/svgsprite/sprite.symbol.svg#close"></use>
+            </svg>
+        </button>
+
+        <h3 class="title title-3">Микроцемент czement art</h3>
+        <div class="detailed__slider">
+            <img src="../../img/catalog/wall.jpg" alt="#">
+            <img src="../../img/objects/academy.jpg" alt="#">
+            <img src="../../img/objects/alpindustry.jpg" alt="#">
+        </div>
+        <p class="modal__text">
+            В основе такой декоративной штукатурки цементная база, которая вместе со смолами на водной основе и добавками-пластификаторами образует надежный материал для финишной отделки полов и стен зала, спальни, кухни, ванны и многих других помещений.
+        </p>
+        
+        <button class="modal__close modal__close-button btn">Закрыть</button>
+
+    </div>
+</div>
+
+
+<!-- Оставить заявку -->
+
+<div class="modal" id="application-modal">
+    <div class="modal__content">
+        <button class="modal__close" type="button">
+            <svg class="icon icon--close">
+                <use href="../../img/svgsprite/sprite.symbol.svg#close"></use>
+            </svg>
+        </button>
+
+        <h3 class="title title-3">Оставить заявку</h3>
+
+        <div class="modal__card">
+
+            <div class="modal__img">
+                <div class="card__tags">
+                    <div class="card__tag">Новинка</div>
+                </div>
+                <img src="../../img/catalog/wall.jpg" alt="#">
+            </div>
+
+            <div class="modal__card-right">
+                <div class="title">Микроцемент czement art</div>
+                <p>Надежный материал для финишной отделки полов и стен различных помещений.</p>
+                
+                <div class="modal__data">
+                    <div class="modal__block">
+                        <div class="modal__weight">10 кг</div>
+                        <div class="modal__price">4180 ₽</div>
+                    </div>
+                    <div class="modal__count">
+                        <button type="button" class="modal__count-minus">-</button>
+                        <span class="modal__count-number">1</span>
+                        <button type="button" class="modal__count-plus">+</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <p class="modal__text">
+            Оставьте заявку и мы свяжемся с вами в ближайшее время, проконсультируем и ответим на все имеющиеся вопросы.
+        </p>
+        <form action="#" class="form" id="call-order">
+            <div class="form__group">
+                <input type="text" placeholder="Ваше имя" required/>
+                <input type="text" placeholder="+7 (___) ___-__-__" required/>
+            </div>
+            <button class="form__btn btn" type="submit">Оставить заявку</button>
+        </form>
+
+        <p class="privacy-policy">Нажимая на кнопку вы соглашаетесь с <a href="#" target="_blank">политикой конфидециальности</a></p>
+    </div>
+</div>
 
 
 <!-- Objects modals -->

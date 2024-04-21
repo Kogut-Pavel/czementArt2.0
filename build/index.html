@@ -7,8 +7,8 @@
 		<title>CzementArt</title>
 		<link rel="stylesheet" href="./css/main.css" />
 
-		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+		<!-- <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png"> -->
 	</head>
 
 	<body>
@@ -187,8 +187,8 @@
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 						<div class="card">
@@ -1255,6 +1255,7 @@
 
 		<!-- html: data-modal="call-modal" -->
 
+		<!-- Заказать звонок -->
 		<div class="modal" id="call-modal">
 			<div class="modal__content">
 				<button class="modal__close" type="button">
@@ -1273,6 +1274,100 @@
 						<input type="text" placeholder="+7 (___) ___-__-__" required />
 					</div>
 					<button class="form__btn btn" type="submit">Заказать звонок</button>
+				</form>
+
+				<p class="privacy-policy">Нажимая на&#160;кнопку вы&#160;соглашаетесь с&#160;<a href="#" target="_blank">политикой конфидециальности</a></p>
+			</div>
+		</div>
+
+		<!-- Подробнее в каталоге -->
+
+		<div class="modal" id="detailed-modal">
+			<div class="modal__content">
+				<button class="modal__close" type="button">
+					<svg class="icon icon--close">
+						<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+					</svg>
+				</button>
+
+				<h3 class="title title-3">Микроцемент czement art</h3>
+				<div class="detailed__slider">
+					<picture>
+						<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/catalog/wall.jpg" alt="#" />
+					</picture>
+					<picture>
+						<source srcset="./img/objects/academy.webp 1x, ./img/objects/academy@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/objects/academy.jpg 1x, ./img/objects/academy@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/objects/academy.jpg" alt="#" />
+					</picture>
+					<picture>
+						<source srcset="./img/objects/alpindustry.webp 1x, ./img/objects/alpindustry@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/objects/alpindustry.jpg 1x, ./img/objects/alpindustry@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/objects/alpindustry.jpg" alt="#" />
+					</picture>
+				</div>
+				<p class="modal__text">
+					В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами образует
+					надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
+				</p>
+
+				<button class="modal__close modal__close-button btn">Закрыть</button>
+			</div>
+		</div>
+
+		<!-- Оставить заявку -->
+
+		<div class="modal" id="application-modal">
+			<div class="modal__content">
+				<button class="modal__close" type="button">
+					<svg class="icon icon--close">
+						<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+					</svg>
+				</button>
+
+				<h3 class="title title-3">Оставить заявку</h3>
+
+				<div class="modal__card">
+					<div class="modal__img">
+						<div class="card__tags">
+							<div class="card__tag">Новинка</div>
+						</div>
+						<picture>
+							<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/catalog/wall.jpg" alt="#" />
+						</picture>
+					</div>
+
+					<div class="modal__card-right">
+						<div class="title">Микроцемент czement art</div>
+						<p>Надежный материал для финишной отделки полов и&#160;стен различных помещений.</p>
+
+						<div class="modal__data">
+							<div class="modal__block">
+								<div class="modal__weight">10 кг</div>
+								<div class="modal__price">4180 ₽</div>
+							</div>
+							<div class="modal__count">
+								<button type="button" class="modal__count-minus">-</button>
+								<span class="modal__count-number">1</span>
+								<button type="button" class="modal__count-plus">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="modal__text">
+					Оставьте заявку и&#160;мы&#160;свяжемся с&#160;вами в&#160;ближайшее время, проконсультируем и&#160;ответим на&#160;все имеющиеся вопросы.
+				</p>
+				<form action="#" class="form" id="call-order">
+					<div class="form__group">
+						<input type="text" placeholder="Ваше имя" required />
+						<input type="text" placeholder="+7 (___) ___-__-__" required />
+					</div>
+					<button class="form__btn btn" type="submit">Оставить заявку</button>
 				</form>
 
 				<p class="privacy-policy">Нажимая на&#160;кнопку вы&#160;соглашаетесь с&#160;<a href="#" target="_blank">политикой конфидециальности</a></p>
@@ -1338,6 +1433,14 @@
 				<button class="modal__close modal__close-button btn">Закрыть</button>
 			</div>
 		</div>
+
 		<script src="./js/index.bundle.js"></script>
+		<script type="text/javascript">
+			var _lrscript = document.createElement("script");
+			_lrscript.type = "text/javascript";
+			_lrscript.defer = _lrscript.async = true;
+			_lrscript.src = "//" + (null || location.host).split(":")[0] + ":35729/livereload.js?";
+			document.body.appendChild(_lrscript);
+		</script>
 	</body>
 </html>

@@ -38,5 +38,7 @@ a.btn {
     background: transparent;
     &:hover {
         background: unset;
+        color: var(--accent);
+        border: 1px solid var(--accent);
     }
 }
