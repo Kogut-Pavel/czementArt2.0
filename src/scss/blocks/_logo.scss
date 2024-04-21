@@ -15,4 +15,10 @@
 .logo--footer {
     font-size: 38px;
     color: #fff;
+    @include mediaLaptop {
+        font-size: 28px;
+    }
+    @include mediaTablet {
+        font-size: 32px;
+    }
 }
