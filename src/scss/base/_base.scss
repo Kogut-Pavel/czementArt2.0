@@ -30,4 +30,7 @@ section {
 	margin-bottom: 30px;
 	border-radius: 40px;
 	overflow: hidden;
+	@include mediaTablet {
+		margin-bottom: 20px;
+	}
 }

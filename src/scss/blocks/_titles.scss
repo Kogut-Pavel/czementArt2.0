@@ -26,6 +26,15 @@
 .title-3 {
 	font-size: 44px;
 	line-height: 90%;
+	@include media-L-Laptop {
+		font-size: 36px;
+	}
+	@include mediaLaptop {
+		font-size: 28px;
+	}
+	@include mediaTablet {
+		font-size: 26px;
+	}
 }
 
 .title-4 {
