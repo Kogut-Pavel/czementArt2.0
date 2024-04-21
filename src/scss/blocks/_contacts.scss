@@ -35,9 +35,13 @@
 }
 
 .form.contacts__form > * {
-    max-width: 280px;
-    width: 100%;
+    @include mediaLaptop {
+        max-width: 280px;
+        width: 100%;
+    }
 }
+
+
 
 .contacts__text {
     margin: 22px 0 51px 0;

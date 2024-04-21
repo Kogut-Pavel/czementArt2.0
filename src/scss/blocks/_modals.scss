@@ -181,6 +181,23 @@
     }
 }
 
+.modal__block-highlighted {
+    padding: 18px;
+    background: var(--section-bg);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+    
+
+.modal__block-highlighted-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.modal__block-highlighted-text {
+    line-height: 150%;
+}
 // application-modal
 
 #application-modal .title {
