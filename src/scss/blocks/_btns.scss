@@ -19,7 +19,9 @@ a.btn {
     align-items: center;
     max-width: fit-content;
     padding: 16px 20px;
-    
+    // @include media-L-Laptop {
+    //     padding: 12px 10px;
+    // }
 }
 
 .btn-link {
@@ -30,6 +32,7 @@ a.btn {
     line-height: 120%;
     font-size: 14px;
     color: var(--text-color);
+
 }
 
 .btn-more {

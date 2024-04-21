@@ -4,6 +4,12 @@
     line-height: 90%;
     text-transform: uppercase;
     color: #292929;
+    @include media-L-Laptop {
+        font-size: 22px;
+    }
+    @include mediaMobile {
+        font-size: 20px;
+    }
 }
 
 .logo--footer {

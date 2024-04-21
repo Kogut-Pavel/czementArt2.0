@@ -4,11 +4,21 @@
     justify-content: space-between;
     gap: 40px;
     font-size: 18px;
+    @include media-L-Laptop {
+        gap: 30px;
+    }
 }
 .nav__list {
     display: flex;
     flex-wrap: wrap;
     gap: 14px 30px;
+    @include media-L-Laptop {
+        gap: 14px 20px;
+    }
+
+    @include mediaLaptop {
+        display: none;
+    }
 }
 .nav__list li a {
     font-weight: 400;
@@ -21,5 +31,4 @@
         color: var(--link-color);
     }
 }
-.active {
-}
+

@@ -8,12 +8,22 @@
     gap: 10px;
     align-items: center;
     padding: 14px 0;
+
+    @include mediaLaptop {
+        flex-direction: row-reverse;
+        padding: 10px 0;
+    }
+
+    @include mediaMobile {
+        padding: 5px 0;
+    }
 }
 
 .header__nav {
     display: block;
-    @include mediaTablet {
-        display: none;
+    @include mediaLaptop {
+        order: 1;
+        z-index: 4;
     }
 }
 
@@ -24,6 +34,34 @@
     gap: 6px;
     line-height: 110%;
     font-size: 14px;
+    @include media-L-Laptop {
+        display: none;
+    }
+}
+
+.header__geo--mobile {
+    font-size: 20px;
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+    @include mediaLaptop {
+        display: flex;
+    }
+    @include mediaTablet {
+        font-size: 18px;
+        .icon {
+            width: 23px;
+            height: 23px;
+        }
+    }
+    @include mediaMobile {
+        font-size: 16px;
+        .icon {
+            width: 21px;
+            height: 21px;
+        }
+    }
 }
 
 .cta {
@@ -38,10 +76,100 @@
     align-items: center;
     gap: 6px;
     height: 42px;
+    @include media-L-Laptop {
+        padding: 12px 10px;
+    }
+    @include mediaLaptop {
+        border: none;
+        order: 3;
+        z-index: 4;
+        span {
+            display: none;
+        }
+        .icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    @include mediaMobile {
+        padding: 10px 0;
+        .icon {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+
+.cta--mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta--mobile a {
+    @include mediaLaptop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 20px;
+        line-height: 120%;
+        border: 1px solid #101010;
+        height: 51px;
+        width: 300px;
+        span {
+            display: block;
+            font-size: 20px;
+        }
+    }
+    @include mediaTablet {
+        .icon {
+            width: 23px;
+            height: 23px;
+        }
+        span {
+            font-size: 18px;
+        }
+    }
+    @include mediaMobile {
+        width: 280px;
+        .icon {
+            width: 21px;
+            height: 21px;
+        }
+        span {
+            font-size: 16px;
+        }
+    }
 }
 
 .cta__btn {
     height: 42px;
     padding: 12px 16px;
     font-size: 14px;
+
+    @include media-L-Laptop {
+        padding: 12px 10px;
+    }
+    @include mediaLaptop {
+        display: none;
+    }
+}
+
+.cta__btn--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 51px;
+    font-size: 20px;
+    @include mediaTablet {
+        font-size: 18px;
+    }
+    @include mediaMobile {
+        width: 280px;
+        font-size: 16px;
+    }
 }
