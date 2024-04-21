@@ -48,7 +48,7 @@ let trainingSlider = tns({
     container: `.training__slider`,
     items: 2,
     slideBy: 1,
-        gutter: 20,
+    gutter: 20,
     mouseDrag: true,
     swipeAngle: false,
     speed: 400,
@@ -92,6 +92,42 @@ let modalSlider = tns({
     ],
 });
 
+// const cardLists = document.querySelectorAll('.catalog .card__slider');
+// const cardListsArr = [];
+
+// if (catalogLists) {
+//     for (let i = 0; i < cardLists.length; i++) {
+//         let card = tns ({
+//             container: `.card__slider`,
+//             items: 1,
+//             slideBy: 1,
+//             gutter: 10,
+//             swipeAngle: false,
+//             speed: 400,
+//             loop: true,
+//             controlsText: [
+//                 '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
+//                 '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+//             ],
+//         });
+    
+//         cardListsArr.push(catalog);
+        
+//     }
+// }
+let card = tns ({
+    container: `.card__slider`,
+    items: 1,
+    slideBy: 1,
+    gutter: 10,
+    swipeAngle: false,
+    speed: 400,
+    loop: true,
+    controlsText: [
+        '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
+        '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+    ],
+});
 
 
 import tabs from './modules/tabs.js';

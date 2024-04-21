@@ -2,12 +2,16 @@ const tabs = function () {
     const tabHeaders = document.querySelectorAll('[data-tab]');
     const contentBoxes = document.querySelectorAll('[data-tab-content]');
     const tnsControls = document.querySelectorAll('.catalog .tns-controls');
+    let arrTnsControls = [...tnsControls];
+    let filteredTnsControls = arrTnsControls.filter(item => !item.closest('.card'));
 
     
-    tnsControls.forEach(function (item) {  
+    filteredTnsControls.forEach(function (item) {  
         item.classList.add('none');
     });
-    tnsControls[0].classList.remove('none');
+    filteredTnsControls[0].classList.remove('none');
+
+    
     tabHeaders.forEach(function (item) {
         item.addEventListener('click', function () {
             let dataTab = this.dataset.tab;
@@ -17,11 +21,11 @@ const tabs = function () {
             tabHeaders.forEach(function (item) {
                 item.classList.remove('active');
             });
-            tnsControls.forEach(function (item) {  
+            filteredTnsControls.forEach(function (item) {  
                 item.classList.add('none');
             });
 
-            tnsControls[tabNumber - 1].classList.remove('none');
+            filteredTnsControls[tabNumber - 1].classList.remove('none');
             
             item.classList.add('active');
             
