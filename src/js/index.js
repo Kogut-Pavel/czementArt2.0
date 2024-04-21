@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
         container: `.training__slider`,
         items: 2,
         slideBy: 1,
-        gutter: 20,
+        // gutter: 20,
         mouseDrag: true,
         swipeAngle: false,
         speed: 400,
@@ -57,6 +57,17 @@ window.addEventListener('DOMContentLoaded', () => {
             '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
             '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
         ],
+        "responsive": {
+            "320": {
+              "items": 1,
+              "controls": true,
+                
+            },
+            "768": {
+                "items": 2,
+            }
+
+          },
     });
     
     let objectsSlider = tns({

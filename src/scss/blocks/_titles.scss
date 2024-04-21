@@ -53,4 +53,15 @@
 .title-4 {
 	font-size: 24px;
 	line-height: 90%;
+	
+	@include media-L-Laptop {
+		font-size: 22px;
+	}
+
+	@include mediaTablet {
+		font-size: 20px;
+	}
+	@include mediaMobile {
+		font-size: 18px;
+	}
 }
