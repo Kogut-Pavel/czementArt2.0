@@ -11,6 +11,13 @@
     &:hover {
         background: var(--hover-accent);
         color: #ffffffcb;
+        @include mediaTablet {
+            background: var(--accent);
+            color: #191919;
+        }
+    }
+    @include mediaTablet {
+        font-size: 14px;
     }
 }
 

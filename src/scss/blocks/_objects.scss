@@ -1,10 +1,25 @@
 .objects {
     padding: 78px 0;
     background: var(--section-bg);
+    @include media-L-Laptop {
+        padding: 70px 0;
+    }
+    @include mediaLaptop {
+        padding: 50px 0;
+    }
+    @include mediaTablet {
+        padding: 40px 0;
+    }
+    @include mediaMobile {
+        padding: 32px 0;
+    }  
 }
 
 .objects__title {
     max-width: 50%;
+    @include mediaTablet {
+        margin-bottom: 24px;
+    }
 }
 
 .objects__gallery {
@@ -12,19 +27,34 @@
     align-items: center;
     gap: 10px;
     margin-top: 46px;
+    @include mediaTablet {
+        margin-top: 0;
+    }
+    @include mediaMobile {
+        
+    }
 }
 
 .objects__item {
     position: relative;
+    @include mediaMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
 }
 
 .objects__item:hover img {
     filter: brightness(70%);
+    @include mediaMobile {
+        filter: brightness(100%)
+    }
 }
 
 .objects__item:hover button {
     opacity: 1;
     pointer-events: all;
+
 }
 
 .objects__item span {
@@ -43,7 +73,12 @@
     z-index: 3;
     pointer-events: all;
     transition: all 0.2s ease-in;
-    
+    @include mediaLaptop {
+        font-size: 14px;
+    }
+    @include mediaTablet {
+        font-size: 12px;
+    }
 }
 
 .objects__item img {
@@ -57,8 +92,25 @@
     bottom: 12px;
     opacity: 0;
     pointer-events: none;
+    @include mediaMobile {
+        opacity: 1;
+        pointer-events: all;
+        left: 48%;
+        transform: translateX(-50%);
+        width: 184px;
+    }
 }
 
 .objects .tns-controls {
     top: -40px;
+    @include mediaTablet {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: -2%;
+        top: unset;
+        width: 104%;
+        justify-content: space-between;
+        z-index: 2;
+    }
 }

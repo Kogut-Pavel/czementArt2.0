@@ -84,6 +84,22 @@ window.addEventListener('DOMContentLoaded', () => {
             '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
             '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
         ],
+        "responsive": {
+            "320": {
+              "items": 1,
+              "controls": true,
+                
+            },
+            "425": {
+                "items": 2,
+            },
+            "768": {
+                "items": 3,
+            },
+            "1024": {
+                "items": 4,
+            }
+          },
     });
     
     let modalSlider = tns({
@@ -99,6 +115,13 @@ window.addEventListener('DOMContentLoaded', () => {
             '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
             '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
         ],
+        "responsive": {
+            "320": {
+              "items": 1,
+              "controls": true,
+              "gutter": 10,
+            },
+        }
     });
     
     
