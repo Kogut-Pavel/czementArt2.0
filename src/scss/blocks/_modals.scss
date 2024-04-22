@@ -29,6 +29,10 @@
 
     border-radius: 3px;
     padding: 8px;
+    @include mediaMobile {
+        top: 8px;
+        right: 8px;
+    }
 }
 
 .modal__content .modal__close:first-child:hover {
@@ -94,6 +98,7 @@
         width: 64px;
         height: 64px;
         border-radius: 20px;
+        pointer-events: all;
     }
 }
 
