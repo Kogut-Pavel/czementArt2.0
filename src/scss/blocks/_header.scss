@@ -103,10 +103,13 @@
 }
 
 .cta--mobile {
-    display: flex;
+    display: none;
     flex-direction: column-reverse;
     align-items: center;
     gap: 10px;
+    @include mediaLaptop {
+        display: flex;
+    }
 }
 
 .cta--mobile a {
@@ -160,12 +163,14 @@
 }
 
 .cta__btn--mobile {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 51px;
     font-size: 20px;
+    @include mediaLaptop {
+        display: flex;
+    }
     @include mediaTablet {
         font-size: 18px;
     }

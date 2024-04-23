@@ -62,6 +62,11 @@
     text-wrap: wrap;
 }
 
+.modal .modal__content input {
+    width: 100%;
+    max-width: 100%;
+}
+
 // object-modal
 
 .modal__close-button {
@@ -93,21 +98,27 @@
 #customize-thumbnails {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    flex-wrap: wrap;
     margin: 10px 0 28px 0;
+    @include mediaTablet {
+        // justify-content: center;
+    }
     img {
         width: 64px;
         height: 64px;
-        border-radius: 20px;
+        border-radius: 14px;
         pointer-events: none;
         cursor: pointer;
+        @include mediaTablet {
+            width: 48px;
+            height: 48px;
+        }
     }
 }
 
 #object-modal.show #customize-thumbnails img {
-    
     pointer-events: all;
-    
 }
 
 #object-modal .modal__content {
