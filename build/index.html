@@ -164,41 +164,50 @@
 					<h2 class="title title-2">Каталог</h2>
 					<p class="catalog__descr">Мы&#160;предлагаем различные декоративные материалы для отделки</p>
 
-					<div class="catalog__header">
-						<div class="tabs">
-							<button class="btn active" data-tab="tab-1">Микроцемент</button>
-							<button class="btn" data-tab="tab-2">Микробетон</button>
-							<button class="btn" data-tab="tab-3">Грунты, лаки</button>
+					<div class="catalog__header select-menu">
+						<div class="select-btn">
+							<span class="sBtn-text">Микроцемент</span>
+							<svg class="icon icon--chevron-down">
+								<use href="./img/svgsprite/sprite.symbol.svg#chevron-down"></use>
+							</svg>
+						</div>
+
+						<div class="tabs options">
+							<button class="btn active option" data-tab="tab-1">Микроцемент</button>
+							<button class="btn option" data-tab="tab-2">Микробетон</button>
+							<button class="btn option" data-tab="tab-3">Грунты, лаки</button>
 						</div>
 					</div>
+
+					<div class="catalog__mobile-block">
+						<picture>
+							<source srcset="./img/catalog/mobile-block.webp 1x, ./img/catalog/mobile-block@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/catalog/mobile-block.jpg 1x, ./img/catalog/mobile-block@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/catalog/mobile-block.jpg" alt="#" />
+						</picture>
+					</div>
+
 					<div class="catalog__list catalog-1" data-tab-content id="tab-1">
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
-							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-								<picture>
-									<source srcset="./img/objects/academy.webp 1x, ./img/objects/academy@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/objects/academy.jpg 1x, ./img/objects/academy@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/objects/academy.jpg" alt="#" />
-								</picture>
-								<picture>
-									<source srcset="./img/objects/alpindustry.webp 1x, ./img/objects/alpindustry@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/objects/alpindustry.jpg 1x, ./img/objects/alpindustry@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/objects/alpindustry.jpg" alt="#" />
-								</picture>
-							</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
 
-							<h4 class="card__title title title-4">Микроцемент czement art</h4>
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
+							</div>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
 									<input type="radio" name="product-name-1" id="radio-card-1" />
@@ -216,7 +225,7 @@
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
@@ -228,24 +237,28 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
+
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-1" />
+									<input type="radio" name="product-name-1" id="radio-card-1" />
 									<div class="card-radio-wrapper">
 										<div class="weight">10 кг</div>
 										<div class="card-radio">
@@ -255,41 +268,45 @@
 									</div>
 								</label>
 								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-2" />
+									<input type="radio" name="product-name-1" id="radio-card-2" />
 									<div class="card-radio-wrapper">
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
+
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-1" />
+									<input type="radio" name="product-name-1" id="radio-card-1" />
 									<div class="card-radio-wrapper">
 										<div class="weight">10 кг</div>
 										<div class="card-radio">
@@ -299,41 +316,45 @@
 									</div>
 								</label>
 								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-2" />
+									<input type="radio" name="product-name-1" id="radio-card-2" />
 									<div class="card-radio-wrapper">
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
+
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-1" />
+									<input type="radio" name="product-name-1" id="radio-card-1" />
 									<div class="card-radio-wrapper">
 										<div class="weight">10 кг</div>
 										<div class="card-radio">
@@ -343,41 +364,45 @@
 									</div>
 								</label>
 								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-2" />
+									<input type="radio" name="product-name-1" id="radio-card-2" />
 									<div class="card-radio-wrapper">
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
+
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-1" />
+									<input type="radio" name="product-name-1" id="radio-card-1" />
 									<div class="card-radio-wrapper">
 										<div class="weight">10 кг</div>
 										<div class="card-radio">
@@ -387,41 +412,45 @@
 									</div>
 								</label>
 								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-2" />
+									<input type="radio" name="product-name-1" id="radio-card-2" />
 									<div class="card-radio-wrapper">
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 					</div>
 
 					<div class="catalog__list catalog-2 none" data-tab-content id="tab-2">
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
+
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
 									<input type="radio" name="product-name-1" id="radio-card-1" />
@@ -439,121 +468,37 @@
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
-							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
-							<p class="card__text">
-								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
-								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
-							</p>
-							<div class="card__prices">
-								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-1" />
-									<div class="card-radio-wrapper">
-										<div class="weight">10 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">4180 ₽</div>
-										</div>
-									</div>
-								</label>
-								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-2" />
-									<div class="card-radio-wrapper">
-										<div class="weight">5 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
-										</div>
-									</div>
-								</label>
-							</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
 
-							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-						</div>
-						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
-							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
-							<div class="card__prices">
-								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-1" />
-									<div class="card-radio-wrapper">
-										<div class="weight">10 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">4180 ₽</div>
-										</div>
-									</div>
-								</label>
-								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-2" />
-									<div class="card-radio-wrapper">
-										<div class="weight">5 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
-										</div>
-									</div>
-								</label>
-							</div>
-
-							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
-							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
-							<p class="card__text">
-								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
-								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
-							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
 									<input type="radio" name="product-name-1" id="radio-card-1" />
@@ -571,124 +516,40 @@
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
-							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
-							<p class="card__text">
-								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
-								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
-							</p>
-							<div class="card__prices">
-								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-1" />
-									<div class="card-radio-wrapper">
-										<div class="weight">10 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">4180 ₽</div>
-										</div>
-									</div>
-								</label>
-								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-2" />
-									<div class="card-radio-wrapper">
-										<div class="weight">5 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
-										</div>
-									</div>
-								</label>
-							</div>
-
-							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
-							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
-							<p class="card__text">
-								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
-								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
-							</p>
-							<div class="card__prices">
-								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-1" />
-									<div class="card-radio-wrapper">
-										<div class="weight">10 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">4180 ₽</div>
-										</div>
-									</div>
-								</label>
-								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-2" />
-									<div class="card-radio-wrapper">
-										<div class="weight">5 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
-										</div>
-									</div>
-								</label>
-							</div>
-
-							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 					</div>
 
 					<div class="catalog__list catalog-3 none" data-tab-content id="tab-3">
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
+
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
 									<input type="radio" name="product-name-1" id="radio-card-1" />
@@ -706,36 +567,40 @@
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
+							<div class="card__top">
+								<div class="card__tags">
+									<div class="card__tag">Новинка</div>
+								</div>
+								<div class="card__slider">
+									<picture>
+										<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
+										<img class="card__main-img" src="./img/catalog/wall.jpg" alt="#" />
+									</picture>
+								</div>
+
+								<h4 class="card__title title title-4">Микроцемент czement art</h4>
 							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
 							<p class="card__text">
 								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
 								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
 							</p>
+							<p class="card__text card__text--short">Базовое фибронаполненное покрытие для пола и&#160;стен</p>
 							<div class="card__prices">
 								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-1" />
+									<input type="radio" name="product-name-1" id="radio-card-1" />
 									<div class="card-radio-wrapper">
 										<div class="weight">10 кг</div>
 										<div class="card-radio">
@@ -745,64 +610,20 @@
 									</div>
 								</label>
 								<label class="radio-card">
-									<input type="radio" name="product-name-2" id="radio-card-2" />
+									<input type="radio" name="product-name-1" id="radio-card-2" />
 									<div class="card-radio-wrapper">
 										<div class="weight">5 кг</div>
 										<div class="card-radio">
 											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
+											<div class="price">По&#160;запросу</div>
 										</div>
 									</div>
 								</label>
 							</div>
 
 							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card__tags">
-								<div class="card__tag">Новинка</div>
-							</div>
-							<div class="card__slider">
-								<picture>
-									<source srcset="./img/catalog/wall.webp 1x, ./img/catalog/wall@2x.webp 2x" type="image/webp" />
-									<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
-									<img src="./img/catalog/wall.jpg" alt="#" />
-								</picture>
-							</div>
-							<h4 class="card__title title title-4">Микробетон czement art</h4>
-							<p class="card__text">
-								В&#160;основе такой декоративной штукатурки цементная база, которая вместе со&#160;смолами на&#160;водной основе и&#160;добавками-пластификаторами
-								образует надежный материал для финишной отделки полов и&#160;стен зала, спальни, кухни, ванны и&#160;многих других помещений.
-							</p>
-							<div class="card__prices">
-								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-1" />
-									<div class="card-radio-wrapper">
-										<div class="weight">10 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">4180 ₽</div>
-										</div>
-									</div>
-								</label>
-								<label class="radio-card">
-									<input type="radio" name="product-name-3" id="radio-card-2" />
-									<div class="card-radio-wrapper">
-										<div class="weight">5 кг</div>
-										<div class="card-radio">
-											<span class="check-icon"></span>
-											<div class="price">2340 ₽</div>
-										</div>
-									</div>
-								</label>
-							</div>
-
-							<div class="card__footer">
-								<button class="btn btn-cta">Оставить заявку</button>
-								<button class="btn btn-more">Подробнее</button>
+								<button class="btn btn-cta" data-modal="application-modal">Оставить заявку</button>
+								<button class="btn btn-more" data-modal="detailed-modal">Подробнее</button>
 							</div>
 						</div>
 					</div>
@@ -1109,9 +930,9 @@
 
 						<div class="marketplaces__item">
 							<picture>
-								<source srcset="./img/marketplaces/yandex.webp 1x, ./img/marketplaces/yandex@2x.webp 2x" type="image/webp" />
-								<source srcset="./img/marketplaces/yandex.png 1x, ./img/marketplaces/yandex@2x.png 2x" type="image/png" />
-								<img class="marketplaces__icon" src="./img/marketplaces/yandex.png" alt="#" />
+								<source srcset="./img/marketplaces/wildberries.webp 1x, ./img/marketplaces/wildberries@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/marketplaces/wildberries.png 1x, ./img/marketplaces/wildberries@2x.png 2x" type="image/png" />
+								<img class="marketplaces__icon" src="./img/marketplaces/wildberries.png" alt="#" />
 							</picture>
 							<h4 class="title title-4">Мы&#160;на&#160;Wildberries</h4>
 							<div class="marketplaces__reviews">
@@ -1124,6 +945,23 @@
 							</div>
 							<a href="#" class="btn">Перейти на&#160;Wildberries</a>
 						</div>
+						<!-- <div class="marketplaces__item">
+                <picture>
+<source srcset="./img/marketplaces/wildberries.webp 1x, ./img/marketplaces/wildberries@2x.webp 2x" type="image/webp">
+<source srcset="./img/marketplaces/wildberries.png 1x, ./img/marketplaces/wildberries@2x.png 2x" type="image/png">
+<img class="marketplaces__icon" src="./img/marketplaces/wildberries.png" alt="#">
+</picture>
+                <h4 class="title title-4">Мы на Wildberries</h4>
+                <div class="marketplaces__reviews">
+                    <picture>
+<source srcset="./img/marketplaces/stars.webp 1x, ./img/marketplaces/stars@2x.webp 2x" type="image/webp">
+<source srcset="./img/marketplaces/stars.png 1x, ./img/marketplaces/stars@2x.png 2x" type="image/png">
+<img src="./img/marketplaces/stars.png" alt="">
+</picture>
+                    <span>200+ отзывов</span>
+                </div>
+                <a href="#" class="btn">Перейти на Wildberries</a>
+            </div> -->
 					</div>
 
 					<picture>
@@ -1431,6 +1269,7 @@
 							<source srcset="./img/catalog/wall.jpg 1x, ./img/catalog/wall@2x.jpg 2x" type="image/jpeg" />
 							<img src="./img/catalog/wall.jpg" alt="#" />
 						</picture>
+						<div class="title">Микроцемент czement art</div>
 					</div>
 
 					<div class="modal__card-right">

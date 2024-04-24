@@ -1,3 +1,5 @@
+// ! Проверить и где нужно сделать адаптив модальных окон
+
 .modal {
     // display: none;
     display: flex;
@@ -143,6 +145,7 @@
 
 #detailed-modal .title {
     margin-bottom: 24px;
+    width: 90%;
 }
 
 #detailed-modal .detailed__slider {
@@ -154,6 +157,9 @@
     border-radius: 20px;
     height: 240px;
     width: 100%;
+    @include mediaTablet {
+        height: 160px;
+    }
 }
 
 #detailed-modal .tns-outer {
@@ -189,6 +195,12 @@
     max-width: 100%;
     max-height: 240px;
     overflow-y: scroll;
+    @include mediaTablet {
+        margin: 10px 0;
+    }
+    @include mediaMobile {
+        line-height: 120%;
+    }
 }
 
 #detailed-modal .modal__text {
@@ -221,11 +233,17 @@
 
 .modal__block-highlighted-text {
     line-height: 150%;
+    @include mediaMobile {
+        line-height: 120%;
+    }
 }
 // application-modal
 
 #application-modal .title {
     margin-bottom: 30px;
+    @include mediaTablet {
+        margin-bottom: 20px;
+    }
 }
 
 #application-modal .modal__card {
@@ -235,17 +253,47 @@
     gap: 14px;
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 20px;
+    @include mediaTablet {
+        grid-template-columns: 64px 1fr;
+    }
+    @include mediaMobile {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 
 #application-modal .modal__img {
     position: relative;
     width: 128px;
     height: 128px;
+    @include mediaTablet {
+        width: 64px;
+        height: 64px;
+    }
+    @include mediaMobile {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#application-modal .modal__img .title {
+    display: none;
+    @include mediaMobile {
+        display: block;
+        margin-bottom: 0;
+    }
 }
 
 #application-modal .modal__img .card__tags {
     top: 7px;
     left: 6px;
+    @include mediaTablet {
+        display: none;
+    }
 }
 
 #application-modal .modal__img .card__tags .card__tag {
@@ -258,10 +306,22 @@
     height: 128px;
     object-fit: cover;
     border-radius: 20px;
+    @include mediaTablet {
+        height: 64px;
+    }
+    @include mediaMobile {
+        width: 54px;
+        height: 54px;
+        border-radius: 13px;
+        max-width: unset;
+    }
 }
 
 #application-modal .modal__card-right .title {
     margin-bottom: 14px;
+    @include mediaMobile {
+        display: none;
+    }
 }
 
 #application-modal .modal__card-right p {
@@ -276,6 +336,12 @@
     grid-template-columns: 137px 1fr;
     gap: 5px;
     height: 38px;
+    @include mediaTablet {
+        grid-template-columns: 2fr 1fr;
+    }
+    @include mediaMobile {
+        height: auto;
+    }
 }
 
 #application-modal .modal__block,
@@ -283,6 +349,9 @@
     border-radius: 20px;
     padding: 14px 10px;
     background: var(--section-bg);
+    @include mediaMobile {
+        // padding: 5px 10px;
+    }
 }
 
 #application-modal .modal__block {
@@ -290,6 +359,9 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    @include mediaMobile {
+        gap: 5px;
+    }
 }
 
 #application-modal .modal__weight {
@@ -300,6 +372,9 @@
 #application-modal .modal__price {
     font-weight: 600;
     font-size: 14px;
+    @include mediaMobile {
+        font-size: 12px;
+    }
 }
 
 #application-modal .modal__count {
@@ -307,10 +382,18 @@
     align-items: center;
     padding: 0 8px;
 }
+#application-modal .modal__count-number {
+    @include mediaMobile {
+        font-size: 14px;
+    }
+}
 
 #application-modal .modal__count-minus,
 #application-modal .modal__count-plus {
     font-size: 20px;
     padding: 12px 16px;
     line-height: 100%;
+    @include mediaMobile {
+        padding: 6px 12px;
+    }
 }

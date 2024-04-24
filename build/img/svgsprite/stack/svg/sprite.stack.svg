@@ -2,6 +2,12 @@
     <path d="M21.333 4v5.334M10.667 4v5.334m-5.334 5.333h21.334M5.333 9.334A2.667 2.667 0 0 1 8 6.667h16a2.667 2.667 0 0 1 2.667 2.667v16A2.667 2.667 0 0 1 24 28H8a2.667 2.667 0 0 1-2.667-2.666v-16Zm9.334 12a1.333 1.333 0 1 0 2.666 0 1.333 1.333 0 0 0-2.666 0Z" stroke="#0171E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 33 32" id="certificate" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.667 23.333v6l2.666-2 2.667 2v-6m-9.333 2H7a2.667 2.667 0 0 1-2.667-2.667V9.333c0-1.467 1.2-2.667 2.667-2.667h18.667a2.667 2.667 0 0 1 2.666 2.667v13.333A2.666 2.666 0 0 1 27 24.973M8.333 12h16m-16 4h4m-4 4H11m5.333 0a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z" stroke="#0171E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 24 25" id="chevron-down" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.354 9.146a.5.5 0 1 0-.708.708l.708-.708ZM12 15.5l-.354.354a.5.5 0 0 0 .708 0L12 15.5Zm6.354-5.646a.5.5 0 0 0-.708-.708l.708.708Zm-12.708 0 6 6 .708-.708-6-6-.708.708Zm6.708 6 6-6-.708-.708-6 6 .708.708Z" fill="#7E7E7E"/>
+</svg><svg fill="none" viewBox="0 0 20 20" id="chevron-left" xmlns="http://www.w3.org/2000/svg">
+    <path d="m12.5 15-5-5 5-5" stroke="#000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 20 20" id="chevron-right" xmlns="http://www.w3.org/2000/svg">
+    <path d="m7.5 5 5 5-5 5" stroke="#000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 15 15" id="clock" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.5 4.583V7.5m-5.25 0a5.25 5.25 0 1 0 10.5 0 5.25 5.25 0 0 0-10.5 0Z" stroke="#fff" stroke-width="1.167" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 33 32" id="clock-hour" xmlns="http://www.w3.org/2000/svg">
@@ -9,13 +15,13 @@
 </svg><svg fill="none" viewBox="0 0 24 24" id="close" xmlns="http://www.w3.org/2000/svg">
     <path d="m6.4 18.308-.708-.708 5.6-5.6-5.6-5.6.708-.708 5.6 5.6 5.6-5.6.708.708-5.6 5.6 5.6 5.6-.708.708-5.6-5.6-5.6 5.6Z" fill="#292929"/>
 </svg><svg fill="none" viewBox="0 0 260 260" id="favicon" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#fa)">
+    <g clip-path="url(#ia)">
         <rect width="260" height="260" rx="40" fill="#000"/>
         <path fill="#fff" d="M16 44h227v173H16z"/>
         <path d="M13 13h234c7.18 0 13 5.82 13 13v208c0 7.18-5.82 13-13 13H13c-7.18 0-13-5.82-13-13V26c0-7.18 5.82-13 13-13Zm175.039 162.961L234 130l-45.961-45.962-18.385 18.385L197.231 130l-27.577 27.577 18.385 18.384ZM62.769 130l27.578-27.577-18.385-18.385L26 130l45.962 45.961 18.385-18.384L62.77 130Zm57.407 65 47.316-130h-27.668L92.508 195h27.668Z" fill="#000"/>
     </g>
     <defs>
-        <clipPath id="fa">
+        <clipPath id="ia">
             <rect width="260" height="260" rx="40" fill="#fff"/>
         </clipPath>
     </defs>

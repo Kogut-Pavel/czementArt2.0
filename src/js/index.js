@@ -27,16 +27,37 @@ window.addEventListener('DOMContentLoaded', () => {
                 container: `.catalog-${i + 1}`,
                 items: 3,
                 slideBy: 1,
-                gutter: 20,
+
                 mouseDrag: true,
                 swipeAngle: false,
                 speed: 400,
                 arrowKeys: true,
                 loop: false,
                 controlsText: [
-                    '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
-                    '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+                    `<svg class="icon icon--chevron-left">
+                        <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                    </svg>`,
+                    `<svg class="icon icon--chevron-right">
+                        <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                    /svg>`,
                 ],
+                "responsive": {
+                    "320": {
+                    disable: true,
+                      "items": 1,
+                      "controls": true,
+                        
+                    },
+                    "768": {
+                        disable: false,
+                        "items": 2,
+                    },
+                    "1440": {
+                        "items": 3,
+                        gutter: 20,
+                    }
+        
+                  },
             });
     
             catalogListsArr.push(catalog);
@@ -54,8 +75,12 @@ window.addEventListener('DOMContentLoaded', () => {
         arrowKeys: true,
         loop: false,
         controlsText: [
-            '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
-            '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+            `<svg class="icon icon--chevron-left">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+            </svg>`,
+            `<svg class="icon icon--chevron-right">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+            /svg>`,
         ],
         "responsive": {
             "320": {
@@ -81,8 +106,12 @@ window.addEventListener('DOMContentLoaded', () => {
         arrowKeys: true,
         loop: false,
         controlsText: [
-            '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
-            '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+            `<svg class="icon icon--chevron-left">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+            </svg>`,
+            `<svg class="icon icon--chevron-right">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+            /svg>`,
         ],
         "responsive": {
             "320": {
@@ -112,16 +141,14 @@ window.addEventListener('DOMContentLoaded', () => {
         loop: false,
         gutter: 10,
         controlsText: [
-            '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
-            '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+            `<svg class="icon icon--chevron-left">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+            </svg>`,
+            `<svg class="icon icon--chevron-right">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+            /svg>`,
         ],
-        "responsive": {
-            "320": {
-              "items": 1,
-              "controls": true,
-              "gutter": 10,
-            },
-        }
+        
     });
     
     
@@ -134,9 +161,22 @@ window.addEventListener('DOMContentLoaded', () => {
         speed: 400,
         loop: true,
         controlsText: [
-            '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
-            '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+            `<svg class="icon icon--chevron-left">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+            </svg>`,
+            `<svg class="icon icon--chevron-right">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+            /svg>`,
         ],
+        "responsive": {
+            "320": {
+              
+                disable: true,
+            },
+            "425": {
+                disable: false,
+            },
+        }
     });
     
     let detailed = tns({
@@ -148,12 +188,34 @@ window.addEventListener('DOMContentLoaded', () => {
         speed: 400,
         loop: true,
         controlsText: [
-            '<img src="../../img/slider-nav/chevron-left.svg" alt="left">',
-            '<img src="../../img/slider-nav/chevron-right.svg" alt="right">',
+            `<svg class="icon icon--chevron-left">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+            </svg>`,
+            `<svg class="icon icon--chevron-right">
+                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+            /svg>`,
         ],
     });
     
     tabs();
+
+    const optionMenu = document.querySelector(".select-menu"),
+    selectBtn = optionMenu.querySelector(".select-btn"),
+    options = optionMenu.querySelectorAll(".option"),
+    sBtn_text = optionMenu.querySelector(".sBtn-text");
+  
+    selectBtn.addEventListener("click", () =>
+        optionMenu.classList.toggle("active")
+    );
+    
+    options.forEach((option) => {
+        option.addEventListener("click", () => {
+            let selectedOption = option.innerText;
+            sBtn_text.innerText = selectedOption;
+        
+            optionMenu.classList.remove("active");
+        });
+    });
     
 });
 

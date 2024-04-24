@@ -85,6 +85,19 @@
 	height: 24px;
 }
 
+.icon--chevron-down {
+	stroke: var(--title-color);
+	width: 24px;
+	height: 24px;
+}
+
+.icon--chevron-left,
+.icon--chevron-right {
+	stroke: var(--title-color);
+	width: 20px;
+	height: 20px;
+}
+
 
 // .icon--user-star {
 // 	fill: rgb(26, 134, 235);

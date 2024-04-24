@@ -6,6 +6,25 @@
     background: #fff;
     padding: 10px 10px 20px 10px;
     border-radius: 30px;
+    @include media-L-Laptop {
+        max-width: calc(50% - 10px);
+    }
+    @include mediaTablet {
+        max-width: 100%;
+    }
+    @include mediaMobile {
+        padding: 20px;
+    }
+}
+
+.card__top {
+    @include mediaMobile {
+        display: grid;
+        grid-template-columns: 58px 1fr;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
 }
 
 .card__tags {
@@ -15,6 +34,9 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    @include mediaMobile {
+        display: none;
+    }
 }
 
 .card__tag {
@@ -34,6 +56,7 @@
 .card__slider {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .card .tns-outer {
@@ -41,7 +64,10 @@
 }
 
 .card.tns-item {
-    padding-right: 10px !important; 
+    padding-right: 10px !important;
+    @include mediaMobile {
+        padding-right: 20px !important;
+    }
 }
 
 .card .tns-controls {
@@ -49,7 +75,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 96%;     
+    width: 96%;
 
     display: flex;
     align-items: center;
@@ -70,30 +96,58 @@
     // margin-bottom: 20px;
     border-radius: 20px;
     height: 240px;
+    @include media-L-Laptop {
+        height: 300px;
+    }
+    @include mediaLaptop {
+        height: 240px;
+    }
+    @include mediaMobile {
+        display: none;
+    }
 }
 
-.card__title,
-.card__text,
-.card__prices,
-.card__footer {
-    // padding: 0 10px;
+.card__slider .card__main-img {
+    @include mediaMobile {
+        display: block;
+        width: 58px;
+        height: 58px;
+    }
 }
 
-.card__title {
+.card .card__title {
     margin: 20px 0;
+    @include mediaMobile {
+        line-height: 150%;
+        margin: 0;
+    }
 }
 
 .card__text {
     margin-bottom: 10px;
     line-height: 150%;
     text-wrap: wrap;
+    @include mediaMobile {
+        display: none;
+    }
+}
+
+.card__text--short {
+    display: none;
+    @include mediaMobile {
+        display: block;
+        margin-bottom: 2px;
+    }
 }
 
 .card__prices {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 10px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
+    @include mediaLaptop {
+        // margin-bottom: 20px;
+    }
 }
 
 label.radio-card {
@@ -102,7 +156,8 @@ label.radio-card {
     width: 100%;
 
     .card-radio-wrapper {
-        height: 90px;
+        position: relative;
+        height: 100%;
         background: #f3f3f3;
         border-radius: 20px;
         // max-width: calc(50% - 5px);
@@ -111,6 +166,9 @@ label.radio-card {
         display: grid;
         // box-shadow: 0 2px 4px 0 rgba(219, 215, 215, 0.04);
         transition: all 0.2s linear;
+        @include mediaMobile {
+            padding: 14px;
+        }
     }
 
     .check-icon {
@@ -121,7 +179,11 @@ label.radio-card {
         border-radius: 50%;
         transition: all 0.2s linear;
         position: relative;
-
+        @include mediaMobile {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -165,27 +227,42 @@ label.radio-card {
             }
         }
     }
+    .weight {
+        font-size: 16px;
+        // margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        @include mediaMobile {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
 
     .card-radio {
-        margin-top: 19px;
+        margin-top: 15px;
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
+        gap: 5px;
         img {
             // margin-bottom: 10px;
         }
-        .weight {
-            font-size: 16px;
-            // margin-bottom: 10px;
-            font-weight: 500;
-            font-size: 16px;
-        }
 
         .price {
+            width: fit-content;
             font-weight: 600;
             font-size: 20px;
             line-height: 100%;
-            text-align: right;
+            // text-align: right;
+            @include mediaLaptop {
+                font-size: 18px;
+            }
+            @include mediaMobile {
+                text-align: left;
+                font-size: 14px;
+            }
         }
     }
 }
@@ -194,9 +271,11 @@ label.radio-card {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.card__footer .btn-cta {
-    max-width: 235px;
-    width: 100%;
+    margin-top: 30px;
+    @include mediaMobile {
+        flex-direction: column;
+        * {
+            width: 100%;
+        }
+    }
 }
