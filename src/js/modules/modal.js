@@ -17,9 +17,9 @@ const modal = function () {
             });
 
             modal.classList.add('show');
-            if (body.classList.contains('no-scroll')) {
-                body.classList.add('no-scroll');
-            }
+
+            body.classList.add('no-scroll');
+            
 
             setTimeout(() => {
                 modalContent.style.transform = 'none';

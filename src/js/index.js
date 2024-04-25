@@ -7,7 +7,7 @@ import tabs from './modules/tabs.js';
 import productCounter from './modules/productCounter.js';
 
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     // Мобильная навигация
     mobileNav();

@@ -26,6 +26,12 @@
 .marketplaces .title-2 {
     position: relative;
     z-index: 2;
+    @include mediaTablet {
+        font-size: 32px;
+    }
+    @include mediaMobile {
+        font-size: 25px;
+    }
 }
 
 .marketplaces__list {
