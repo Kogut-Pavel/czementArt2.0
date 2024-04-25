@@ -35,10 +35,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 loop: false,
                 controlsText: [
                     `<svg class="icon icon--chevron-left">
-                        <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                        <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
                     </svg>`,
                     `<svg class="icon icon--chevron-right">
-                        <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                        <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
                     /svg>`,
                 ],
                 "responsive": {
@@ -76,10 +76,10 @@ window.addEventListener('DOMContentLoaded', () => {
         loop: false,
         controlsText: [
             `<svg class="icon icon--chevron-left">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
             </svg>`,
             `<svg class="icon icon--chevron-right">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
             /svg>`,
         ],
         "responsive": {
@@ -107,10 +107,10 @@ window.addEventListener('DOMContentLoaded', () => {
         loop: false,
         controlsText: [
             `<svg class="icon icon--chevron-left">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
             </svg>`,
             `<svg class="icon icon--chevron-right">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
             /svg>`,
         ],
         "responsive": {
@@ -142,10 +142,10 @@ window.addEventListener('DOMContentLoaded', () => {
         gutter: 10,
         controlsText: [
             `<svg class="icon icon--chevron-left">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
             </svg>`,
             `<svg class="icon icon--chevron-right">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
             /svg>`,
         ],
         
@@ -162,10 +162,10 @@ window.addEventListener('DOMContentLoaded', () => {
         loop: true,
         controlsText: [
             `<svg class="icon icon--chevron-left">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
             </svg>`,
             `<svg class="icon icon--chevron-right">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
             /svg>`,
         ],
         "responsive": {
@@ -189,10 +189,10 @@ window.addEventListener('DOMContentLoaded', () => {
         loop: true,
         controlsText: [
             `<svg class="icon icon--chevron-left">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
             </svg>`,
             `<svg class="icon icon--chevron-right">
-                <use href="../../img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
             /svg>`,
         ],
     });
