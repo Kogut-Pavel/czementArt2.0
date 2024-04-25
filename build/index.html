@@ -681,7 +681,7 @@
 							</p>
 						</div>
 						<div class="training__list training__slider">
-							<a href="#" class="training__card item">
+							<div class="training__card item" data-modal="video-modal">
 								<div class="card__tags">
 									<div class="card__tag">
 										<svg class="icon icon--clock">
@@ -701,8 +701,8 @@
 									</svg>
 								</div>
 								<h4 class="title title-4">Как наносить?</h4>
-							</a>
-							<a href="#" class="training__card item">
+							</div>
+							<div class="training__card item">
 								<div class="card__tags">
 									<div class="card__tag">
 										<svg class="icon icon--clock">
@@ -722,8 +722,8 @@
 									</svg>
 								</div>
 								<h4 class="title title-4">Что делать, если цемент слежался?</h4>
-							</a>
-							<a href="#" class="training__card item">
+							</div>
+							<div class="training__card item">
 								<div class="card__tags">
 									<div class="card__tag">
 										<svg class="icon icon--clock">
@@ -743,8 +743,8 @@
 									</svg>
 								</div>
 								<h4 class="title title-4">Как наносить?</h4>
-							</a>
-							<a href="#" class="training__card item">
+							</div>
+							<div class="training__card item">
 								<div class="card__tags">
 									<div class="card__tag">
 										<svg class="icon icon--clock">
@@ -764,7 +764,7 @@
 									</svg>
 								</div>
 								<h4 class="title title-4">Что делать, если цемент слежался?</h4>
-							</a>
+							</div>
 						</div>
 						<div class="training__footer">
 							<a href="https://www.youtube.com/@CzementArt" class="btn" target="_blank">Больше видео на&#160;YouTube</a>
@@ -1362,6 +1362,31 @@
 					</picture>
 				</div>
 				<button class="modal__close modal__close-button btn">Закрыть</button>
+			</div>
+		</div>
+
+		<!-- video-modal -->
+
+		<div class="modal" id="video-modal">
+			<div class="modal__content">
+				<button class="modal__close" type="button">
+					<svg class="icon icon--close">
+						<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+					</svg>
+				</button>
+
+				<h3 class="modal__title title title-3">Как наносить?</h3>
+
+				<div class="modal__video">
+					<iframe
+						src="https://www.youtube.com/embed/JPDCRlOOSOA?si=xHyeRnjIIAQwpcyX"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
 			</div>
 		</div>
 

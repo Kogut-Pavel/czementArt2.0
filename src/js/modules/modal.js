@@ -32,10 +32,12 @@ const modal = function () {
     function closeModal(modal) {
         let modalContent = modal.querySelector('.modal__content');
         modalContent.removeAttribute('style');
+
         setTimeout(() => {
             modal.classList.remove('show');
             body.classList.remove('no-scroll');
         }, 200);
+
     }
 
     // Добавляем слушатель на крестики в модальных окнах
