@@ -17,16 +17,6 @@
     }
 }
 
-.card__top {
-    @include mediaMobile {
-        display: grid;
-        grid-template-columns: 58px 1fr;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 16px;
-    }
-}
-
 .card__tags {
     position: absolute;
     top: 23px;
@@ -93,7 +83,6 @@
 
 .card__slider img {
     width: 100%;
-    // margin-bottom: 20px;
     border-radius: 20px;
     height: 240px;
     @include media-L-Laptop {
@@ -101,6 +90,9 @@
     }
     @include mediaLaptop {
         height: 240px;
+    }
+    @include mediaTablet {
+        height: 260px;
     }
     @include mediaMobile {
         display: none;
@@ -110,8 +102,8 @@
 .card__slider .card__main-img {
     @include mediaMobile {
         display: block;
-        width: 58px;
-        height: 58px;
+        height: 200px;
+        margin-bottom: 16px;
     }
 }
 
@@ -144,10 +136,6 @@
     display: flex;
     align-items: stretch;
     gap: 10px;
-    // margin-bottom: 30px;
-    @include mediaLaptop {
-        // margin-bottom: 20px;
-    }
 }
 
 label.radio-card {
@@ -221,7 +209,6 @@ label.radio-card {
         &:focus {
             + .card-radio-wrapper {
                 .check-icon {
-                    // box-shadow: 0 0 0 4px rgba(48, 86, 213, 0.2);
                     border-color: var(--accent);
                 }
             }
@@ -246,9 +233,6 @@ label.radio-card {
         justify-content: space-between;
         align-items: center;
         gap: 5px;
-        img {
-            // margin-bottom: 10px;
-        }
 
         .price {
             width: fit-content;
