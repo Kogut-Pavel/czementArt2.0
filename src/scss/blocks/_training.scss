@@ -33,6 +33,9 @@
 
 .training__inner .item {
     min-height: 352px;
+    @include mediaLaptop {
+        min-height: 240px;
+    }
     @include mediaTablet {
         min-height: auto;
     }
@@ -55,9 +58,14 @@
 
 .training__static h4 {
     text-transform: uppercase;
+    font-size: 40px;
     margin-bottom: 50px;
     @include mediaTablet {
         margin-bottom: 20px;
+        font-size: 36px;
+    }
+    @include mediaMobile {
+        font-size: 30px;
     }
 }
 
@@ -65,6 +73,9 @@
     margin-top: auto;
     font-size: 18px;
     line-height: 150%;
+    @include mediaLaptop {
+        text-wrap: initial;
+    }
     @include mediaTablet {
         font-size: 16px;
         margin-top: unset;
