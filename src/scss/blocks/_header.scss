@@ -78,6 +78,7 @@
     align-items: center;
     gap: 6px;
     height: 42px;
+    line-height: 150%;
     @include media-L-Laptop {
         padding: 12px 10px;
     }

@@ -94,14 +94,15 @@
 .consultation__img-2 {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -10%;
     transition: all 0.3s ease-in-out;
     pointer-events: none;
     @include media-L-Laptop {
-        right: -40%;
+        right: -30%;
     }
     @include mediaLaptop {
-        max-width: 115%;
+        max-width: 100%;
+        right: -40%;
     }
     @include mediaTablet {
         max-width: 100%;
