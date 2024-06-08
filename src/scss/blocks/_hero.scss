@@ -6,25 +6,29 @@
     // background-size: inherit;
     // background-position: 0% 100%;
     padding-top: 69px;
-    padding-bottom: 244px;
-
+    padding-bottom: 82px;
+    // height: calc(100vh - 70px);
     @include media-L-Laptop {
         padding-top: 60px;
-        padding-bottom: 170px;
     }
     @include mediaLaptop {
         padding-top: 50px;
-        padding-bottom: 140px;
     }
     @include mediaTablet {
         padding-top: 36px;
-        padding-bottom: 240px;
     }
     @include mediaMobile {
         padding-top: 24px;
-        // padding-bottom: 180px;
     }
 }
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 
 .hero__title {
     margin-bottom: 27px;
@@ -58,17 +62,22 @@
 
 .hero__img-abs {
     position: absolute;
-    bottom: 0;
-    right: 0;
+
+    bottom: 0%;
+    right: 0%;
     border-radius: 40px;
     pointer-events: none;
-    @include mediaTablet {
-        max-width: 180%;
-        right: -10%;
+    height: 100%;
+
+    @include media-L-Laptop {
+        right: -20%;
     }
-    @include mediaMobile {
-        max-width: 280%;
-        right: -55%;
+    @include mediaLaptop {
+        right: -25%;
+    }
+    @include mediaTablet {
+        right: -30%;
+        height: auto;
         z-index: 1;
     }
 }

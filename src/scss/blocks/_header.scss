@@ -121,6 +121,9 @@
     @include mediaLaptop {
         display: flex;
         background: transparent;
+        a .icon {
+            width: 21px;
+        }
     }
 }
 

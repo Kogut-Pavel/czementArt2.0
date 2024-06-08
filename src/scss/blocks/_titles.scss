@@ -5,13 +5,19 @@
 }
 
 .title-1 {
+	max-width: 50%;
 	font-size: 100px;
 	line-height: 90%;
+	@include media-L-Laptop {
+	  font-size: 80px;
+	}
 	@include mediaLaptop {
-		font-size: 80px;
+		font-size: 56px;
 	}
 	@include mediaTablet {
+		position: relative;
 		font-size: 48px;
+		z-index: 5;
 	}
 	@include mediaMobile {
 		font-size: 32px;
