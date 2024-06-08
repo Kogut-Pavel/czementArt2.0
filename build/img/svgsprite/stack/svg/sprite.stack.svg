@@ -33,8 +33,8 @@
 </svg><svg fill="none" viewBox="0 0 34 34" id="map-pin" xmlns="http://www.w3.org/2000/svg">
     <path d="M12.75 15.584a4.25 4.25 0 1 0 8.5 0 4.25 4.25 0 0 0-8.5 0Z" stroke="#0171E3" stroke-width="1.511" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="m25.014 23.598-6.011 6.01a2.834 2.834 0 0 1-4.005 0l-6.012-6.01a11.333 11.333 0 1 1 16.028 0Z" stroke="#0171E3" stroke-width="1.511" stroke-linecap="round" stroke-linejoin="round"/>
-</svg><svg fill="none" viewBox="0 0 33 32" id="phone" xmlns="http://www.w3.org/2000/svg">
-    <path d="M7.417 5.333h5.333L15.417 12l-3.334 2a14.667 14.667 0 0 0 6.667 6.666l2-3.333L27.417 20v5.333A2.667 2.667 0 0 1 24.75 28a21.334 21.334 0 0 1-20-20 2.667 2.667 0 0 1 2.667-2.667Z" stroke="#0171E3" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 15 16" id="phone" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.125 3h2.5l1.25 3.125-1.563.938a6.875 6.875 0 0 0 3.125 3.125l.938-1.563 3.125 1.25v2.5a1.25 1.25 0 0 1-1.25 1.25A10 10 0 0 1 1.875 4.25 1.25 1.25 0 0 1 3.125 3Z" stroke="#000" stroke-width=".938" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 25 24" id="player-play" xmlns="http://www.w3.org/2000/svg">
     <path d="M6.5 4v16a1 1 0 0 0 1.524.852l13-8a1 1 0 0 0 0-1.704l-13-8A1 1 0 0 0 6.5 4Z" fill="#fff"/>
 </svg><svg fill="none" viewBox="0 0 104 19" id="stars" xmlns="http://www.w3.org/2000/svg">
