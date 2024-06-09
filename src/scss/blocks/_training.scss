@@ -47,27 +47,44 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    @include mediaMobile {
+        gap: unset;
+    }
+}
+
+.training__static.item {
+    min-height: auto;
 }
 
 .training__static img {
-    margin-bottom: 24px;
-    border-radius: 15px;
-    width: 80px;
-    height: 80px;
-}
-
-.training__static h4 {
-    text-transform: uppercase;
-    font-size: 40px;
-    margin-bottom: 50px;
-    @include mediaTablet {
-        margin-bottom: 20px;
-        font-size: 36px;
+    // border-radius: 15px;
+    width: 70%;
+    // height: 80px;
+    height: auto;
+    @include media-L-Laptop {
+        width: 50%;
+    }
+    @include mediaLaptop {
+        width: 40%;
     }
     @include mediaMobile {
-        font-size: 30px;
+        display: none;
     }
 }
+
+// .training__static h4 {
+//     text-transform: uppercase;
+//     font-size: 40px;
+//     margin-bottom: 50px;
+//     @include mediaTablet {
+//         margin-bottom: 20px;
+//         font-size: 36px;
+//     }
+//     @include mediaMobile {
+//         font-size: 30px;
+//     }
+// }
 
 .training__static p {
     margin-top: auto;
@@ -75,6 +92,7 @@
     line-height: 150%;
     @include mediaLaptop {
         text-wrap: initial;
+        // margin-top: 0;
     }
     @include mediaTablet {
         font-size: 16px;
@@ -88,10 +106,25 @@
     gap: 20px;
     align-items: stretch;
     @include mediaTablet {
-        gap: 0;
+        gap: 10px;
     }
     @include mediaMobile {
+        overflow-x: scroll;
         gap: 10px;
+        padding-bottom: 20px;
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+        &::-webkit-scrollbar-track {
+            position: absolute;
+            bottom: -10px;
+            background: rgba(41, 41, 41, 0.2);
+            border-radius: 13px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #292929;
+            border-radius: 13px;
+        }
     }
 }
 
@@ -102,7 +135,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
     background: #fff;
     padding: 10px;
     padding-bottom: 20px;
@@ -110,6 +143,10 @@
     cursor: pointer;
     @include mediaLaptop {
         max-width: 100%;
+    }
+    @include mediaMobile {
+        min-width: 248px;
+        width: 248px;
     }
 }
 
@@ -130,11 +167,17 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: var(--accent);
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
+        background: #f5270b;
+        border-radius: 23px;
+        width: 91px;
+        height: 62px;
         z-index: 4;
+
+        @include mediaMobile {
+            width: 70px;
+            height: 48px;
+            border-radius: 18px;
+        }
     }
     @include mediaTablet {
         margin-bottom: 10px;
@@ -147,17 +190,18 @@
     left: 50%;
     z-index: 5;
     transform: translate(-50%, -50%);
-    
+    @include mediaMobile {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .training__card img {
-    
     height: 100%;
     width: 100%;
     margin-bottom: 12px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
-    
 }
 
 .training__card h4 {
@@ -187,7 +231,14 @@
 
 .training__footer {
     display: flex;
-    // justify-content: center;
     width: 100%;
+    a.btn {
+        @include mediaMobile {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
-

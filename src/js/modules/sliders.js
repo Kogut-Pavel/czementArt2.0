@@ -68,9 +68,14 @@ const sliders = function() {
         ],
         "responsive": {
             "320": {
-              "items": 1,
-              "controls": true,
-                
+            //   "items": 1,
+            //   "controls": true,
+                "disable": true,
+            },
+            "450": {
+                "items": 1,
+                "controls": true,
+                "disable": false,
             },
             "768": {
                 "items": 2,

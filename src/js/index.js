@@ -27,5 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Табы в виде выпадающего списка на мобильных устройствах
     selectMenu();
     
+   
 });
 
