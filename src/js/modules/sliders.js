@@ -27,7 +27,7 @@ const sliders = function() {
                 ],
                 "responsive": {
                     "320": {
-                    disable: true,
+                      "disable": true,
                       "items": 1,
                       "controls": true,
                         

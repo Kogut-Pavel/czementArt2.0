@@ -82,7 +82,7 @@
 .card.tns-item {
     padding-right: 10px !important;
     @include mediaMobile {
-        padding-right: 20px !important;
+        padding-right: inherit;
     }
 }
 

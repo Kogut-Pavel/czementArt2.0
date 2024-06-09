@@ -81,6 +81,7 @@
     display: flex;
     align-items: stretch;
     gap: 20px;
+
     @include mediaLaptop {
         gap: 10px;
     }
@@ -93,11 +94,15 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
+        z-index: 3;
     }
 }
 
 .tns-ovh {
     overflow-x: hidden;
+    @include mediaMobile {
+        overflow: visible;
+    }
 }
 
 .tns-liveregion,
@@ -117,6 +122,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
+    z-index: 4;
 }
 
 .tns-controls [aria-controls] {
@@ -138,11 +144,11 @@
 }
 
 @include mediaMobile {
-
     .select-menu {
         position: relative;
         max-width: 100%;
         margin-bottom: 20px;
+        z-index: 4;
     }
     .select-menu .select-btn {
         position: relative;
@@ -159,6 +165,7 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+        z-index: 4;
     }
     .select-menu .select-btn .sBtn-text {
         font-size: 16px;
@@ -182,6 +189,7 @@
         -webkit-animation-duration: 0.35s;
         -webkit-animation-fill-mode: both;
         pointer-events: none;
+        z-index: 4;
     }
     .select-menu .options .option {
         width: 100%;
