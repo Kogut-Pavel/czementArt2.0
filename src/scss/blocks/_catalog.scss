@@ -31,10 +31,12 @@
 }
 
 .catalog__header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+    z-index: 3;
 }
 
 .catalog__img {
