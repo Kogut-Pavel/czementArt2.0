@@ -6,7 +6,7 @@
     // background-size: inherit;
     // background-position: 0% 100%;
     padding-top: 69px;
-    padding-bottom: 82px;
+    padding-bottom: 94px;
     // height: calc(100vh - 70px);
     @include media-L-Laptop {
         padding-top: 60px;
@@ -18,7 +18,7 @@
         padding-top: 36px;
     }
     @include mediaMobile {
-        padding-top: 24px;
+        padding-top: 44px;
     }
 }
 
@@ -35,7 +35,7 @@
     z-index: 3;
 
     @include mediaMobile {
-        margin-bottom: 26px;
+        margin-bottom: 40px;
     }
 }
 
@@ -51,10 +51,13 @@
     }
     @include mediaTablet {
         font-size: 16px;
+        max-width: 65%;
     }
     @include mediaMobile {
-        margin-bottom: 32px;
-        max-width: 80%;
+        margin-bottom: 64px;
+        // max-width: 80%;
+        max-width: 100%;
+
     }
 }
 
