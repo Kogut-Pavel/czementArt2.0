@@ -108,7 +108,7 @@ const sliders = function() {
               "controls": true,
                 
             },
-            "425": {
+            "450": {
                 "items": 2,
             },
             "768": {

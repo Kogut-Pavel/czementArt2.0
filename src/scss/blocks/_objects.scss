@@ -1,4 +1,5 @@
 .objects {
+    position: relative;
     padding: 78px 0;
     background: var(--section-bg);
     @include media-L-Laptop {
@@ -12,13 +13,26 @@
     }
     @include mediaMobile {
         padding: 32px 0;
-    }  
+        padding-bottom: 0;
+    }
+}
+
+.objects .container:last-child {
+    @include mediaMobile {
+        margin: unset;
+        padding: unset;
+        max-width: unset;
+    }
 }
 
 .objects__title {
     max-width: 50%;
     @include mediaTablet {
         margin-bottom: 24px;
+    }
+    @include mediaMobile {
+        padding-bottom: 460px;
+        pointer-events: none;
     }
 }
 
@@ -31,7 +45,11 @@
         margin-top: 0;
     }
     @include mediaMobile {
-        
+        height: 460px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        gap: 0;
     }
 }
 
@@ -40,27 +58,33 @@
     @include mediaMobile {
         display: flex;
         align-items: center;
-        justify-content: center;   
+        justify-content: center;
     }
 }
 
 .objects__item:hover img {
     filter: brightness(70%);
     @include mediaMobile {
-        filter: brightness(100%)
+        filter: brightness(100%);
     }
 }
 
 .objects__item:hover button {
     opacity: 1;
     pointer-events: all;
-
 }
 
-.objects__item span {
+.objects__items-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: absolute;
     top: 13px;
     left: 10px;
+}
+
+.objects__item span {
+    width: fit-content;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
@@ -72,7 +96,7 @@
     overflow: hidden;
     z-index: 3;
     pointer-events: all;
-    transition: all 0.2s ease-in;
+    // transition: all 0.2s ease-in;
     @include mediaLaptop {
         font-size: 14px;
     }
@@ -84,6 +108,14 @@
 .objects__item img {
     border-radius: 20px;
     transition: all 0.2s ease-in;
+    @include mediaTablet {
+        width: 100%;
+    }
+    @include mediaMobile {
+        height: 460px;
+        object-fit: cover;
+        border-radius: 32px;
+    }
 }
 
 .objects__item button {
@@ -92,25 +124,43 @@
     bottom: 12px;
     opacity: 0;
     pointer-events: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #191919;
     @include mediaMobile {
         opacity: 1;
         pointer-events: all;
-        left: 48%;
+        left: 50%;
         transform: translateX(-50%);
-        width: 184px;
+        max-width: 80%;
+        width: 100%;
+        z-index: 3;
+    }
+}
+
+.objects #tns2 > .tns-item {
+    @include mediaMobile {
+        padding-right: 0 !important;
     }
 }
 
 .objects .tns-controls {
     top: -40px;
     @include mediaTablet {
-        position: absolute;
-        bottom: 50%;
-        transform: translateY(50%);
-        left: -2%;
-        top: unset;
-        width: 104%;
+        // position: absolute;
+        // bottom: 50%;
+        // transform: translateY(50%);
+        // left: -2%;
+        top: -60px;
+        // width: 104%;
         justify-content: space-between;
-        z-index: 2;
+        // z-index: 2;
+    }
+    @include mediaMobile {
+        top: -250px;
+        width: 96%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
