@@ -5,6 +5,7 @@ function mobileNav() {
 	const menuIcon = document.querySelector('.nav-icon');
 	const callModalBtn = document.querySelector('.cta__btn--mobile');
 	const mobileNavList = document.querySelectorAll('.mobile-nav__list li');
+	const headerGeoMobile = document.querySelector('.header__geo--mobile');
 
 	navBtn.onclick = function () {
 		nav.classList.toggle('mobile-nav--open');
@@ -17,6 +18,12 @@ function mobileNav() {
 				menuIcon.classList.remove('nav-icon--active');
 				document.body.classList.remove('no-scroll');
 			});
+		});
+
+		headerGeoMobile.addEventListener('click', () => {
+			nav.classList.remove('mobile-nav--open');
+			menuIcon.classList.remove('nav-icon--active');
+			document.body.classList.remove('no-scroll');
 		});
 	};
 }

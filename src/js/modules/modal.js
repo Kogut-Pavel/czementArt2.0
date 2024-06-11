@@ -31,11 +31,14 @@ const modal = function () {
     // Закрываем модальное окно, убирая классы
     function closeModal(modal) {
         let modalContent = modal.querySelector('.modal__content');
+        let mobileNavOpen = document.querySelector('.mobile-nav--open');
         modalContent.removeAttribute('style');
 
         setTimeout(() => {
             modal.classList.remove('show');
-            body.classList.remove('no-scroll');
+            if (!mobileNavOpen) {
+                body.classList.remove('no-scroll');
+            } 
         }, 200);
 
     }
