@@ -40,8 +40,8 @@
     padding: 30px;
     background: #fff;
     border-radius: 20px;
-    gap: 50px;
-    min-height: 200px;
+    gap: 24px;
+    min-height: 250px;
     @include media-L-Laptop {
         max-width: calc(50% - 5px);
         width: 100%;
@@ -50,12 +50,25 @@
         max-width: 100%;
         min-height: 160px;
     }
+    @include mediaMobile {
+        padding: 20px;
+    }
 }
 
 .partners__name.title-4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #292929;
     @include mediaLaptop {
         font-size: 20px;
     }
+}
+
+.partners__phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .partners__phone {
@@ -63,25 +76,40 @@
 }
 
 .partners__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 100%;
-    color: rgba(25, 25, 25, 0.6);;
+    font-size: 16px;
+    line-height: 120%;
+    color: #191919;
     text-wrap: nowrap;
+
+    border-radius: 40px;
+    padding: 16px;
+
+    background: var(--accent);
 }
 
 .partners__info {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 10px;
+    flex-direction: column;
+    gap: 18px;
+    * {
+        font-size: 16px;
+        line-height: 110%;
+        color: #191919;
+    }
     @include mediaLaptop {
         flex-wrap: wrap;
     }
-
+    @include mediaMobile {
+        gap: 12px;
+    }
 }
 
-.partners__info  * {
+.partners__info * {
     @include mediaTablet {
         font-size: 14px;
     }
