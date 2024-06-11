@@ -13,9 +13,9 @@ function mobileNav() {
 
 		mobileNavList.forEach(item => {
 			item.addEventListener('click', () => {
-				nav.classList.toggle('mobile-nav--open');
-				menuIcon.classList.toggle('nav-icon--active');
-				document.body.classList.toggle('no-scroll');
+				nav.classList.remove('mobile-nav--open');
+				menuIcon.classList.remove('nav-icon--active');
+				document.body.classList.remove('no-scroll');
 			});
 		});
 	};
