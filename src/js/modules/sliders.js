@@ -3,7 +3,6 @@ import { tns } from 'tiny-slider';
 const sliders = function() {
     
     const catalogLists = document.querySelectorAll('.catalog .catalog__list');
-    const catalogListsArr = [];
     
     if (catalogLists) {
         for (let i = 0; i < catalogLists.length; i++) {
@@ -44,7 +43,6 @@ const sliders = function() {
                   },
             });
     
-            catalogListsArr.push(catalog);
         }
     }
     
@@ -119,26 +117,60 @@ const sliders = function() {
             }
           },
     });
-    
-    let modalSlider = tns({
-        container: '.modal__slider',
-        items: 1,
-        navContainer: '#customize-thumbnails',
-        navAsThumbnails: true,
-        swipeAngle: false,
-        speed: 400,
-        loop: false,
-        gutter: 10,
-        controlsText: [
-            `<svg class="icon icon--chevron-left">
-                <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
-            </svg>`,
-            `<svg class="icon icon--chevron-right">
-                <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
-            /svg>`,
-        ],
-        
+
+    const objects = document.querySelectorAll('.modal__object');
+
+    if (objects) {
+        for (let i = 0; i < objects.length; i++) {
+            let modalSlider = tns({
+                // container: '.modal__slider',
+                container: `.object-${i + 1} .modal__slider`,
+                items: 1,
+                navContainer: `.object-${i + 1} .thumbnails`,
+                navAsThumbnails: true,
+                swipeAngle: false,
+                speed: 400,
+                loop: false,
+                gutter: 10,
+                controlsText: [
+                    `<svg class="icon icon--chevron-left">
+                        <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+                    </svg>`,
+                    `<svg class="icon icon--chevron-right">
+                        <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                    /svg>`,
+                ],
+            });
+        }
+    }
+
+    let objectsItems = document.querySelectorAll('.objects__gallery [data-modal="object-modal"]');
+    let modalObjects = document.querySelectorAll('.modal__object');
+
+    modalObjects.forEach((item) => {
+        item.classList.add('none');
     });
+
+    objectsItems.forEach((item) => {
+        item.addEventListener('click', ({target}) => {
+            modalObjects.forEach((item) => {
+                item.classList.add('none');
+            });
+            let index = [...objectsItems].findIndex((e) => e === target);
+            if (modalObjects[index]) {
+                modalObjects[index].classList.remove('none');
+            } 
+            if (modalObjects[index]) {
+                document.querySelector('.no-photo').classList.add('none');
+            } else {
+                document.querySelector('.no-photo').classList.remove('none');
+            }
+            
+    
+        });
+    });
+    
+    
     
     
     let card = tns({
