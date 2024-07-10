@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Мобильная навигация
     mobileNav();
-    
+
     // Модальные окна
     modal();
     
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Табы в виде выпадающего списка на мобильных устройствах
     selectMenu();
-    
    
 });
 
