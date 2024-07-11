@@ -93,8 +93,8 @@
     @include mediaTablet {
         display: flex;
         flex-direction: row;
-        overflow-x: auto;
         padding-bottom: 20px;
+        overflow-x: auto;
         transform: translateZ(0);
         -webkit-overflow-scrolling: touch;
         height: calc(100% + 1px);

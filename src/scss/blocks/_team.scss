@@ -62,8 +62,6 @@
     justify-content: space-between;
     z-index: 2;
     @include mediaTablet {
-        // display: flex;
-        // flex-direction: column;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -73,7 +71,10 @@
     }
     @include mediaMobile {
         flex-direction: row;
-        overflow-x: scroll;
+        overflow-x: auto;
+        transform: translateZ(0);
+        -webkit-overflow-scrolling: touch;
+        height: calc(100% + 1px);
         padding-bottom: 20px;
         &::-webkit-scrollbar {
             height: 4px;
@@ -87,7 +88,7 @@
             background: #292929;
             border-radius: 13px;
         }
-    }   
+    }
 }
 
 .team__item {
@@ -105,7 +106,6 @@
         width: 184px;
         padding: 20px;
     }
-    
 }
 
 .team__item-third {

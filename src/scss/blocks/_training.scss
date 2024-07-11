@@ -58,9 +58,7 @@
 }
 
 .training__static img {
-    // border-radius: 15px;
     width: 70%;
-    // height: 80px;
     height: auto;
     @include media-L-Laptop {
         width: 50%;
@@ -73,26 +71,12 @@
     }
 }
 
-// .training__static h4 {
-//     text-transform: uppercase;
-//     font-size: 40px;
-//     margin-bottom: 50px;
-//     @include mediaTablet {
-//         margin-bottom: 20px;
-//         font-size: 36px;
-//     }
-//     @include mediaMobile {
-//         font-size: 30px;
-//     }
-// }
-
 .training__static p {
     margin-top: auto;
     font-size: 18px;
     line-height: 150%;
     @include mediaLaptop {
         text-wrap: initial;
-        // margin-top: 0;
     }
     @include mediaTablet {
         font-size: 16px;
@@ -109,7 +93,10 @@
         gap: 10px;
     }
     @include mediaMobile {
-        overflow-x: scroll;
+        overflow-x: auto;
+        transform: translateZ(0);
+        -webkit-overflow-scrolling: touch;
+        height: calc(100% + 1px);
         gap: 10px;
         padding-bottom: 20px;
         &::-webkit-scrollbar {

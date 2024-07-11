@@ -58,7 +58,10 @@
     @include mediaTablet {
         flex-wrap: nowrap;
         max-width: 100%;
-        overflow-x: scroll;
+        overflow-x: auto;
+        transform: translateZ(0);
+        -webkit-overflow-scrolling: touch;
+        height: calc(100% + 1px);
     }
 }
 
