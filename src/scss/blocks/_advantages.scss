@@ -19,7 +19,7 @@
         display: flex;
         align-items: stretch;
         flex-direction: row;
-        overflow-x: auto;
+        overflow-x: scroll;
         transform: translateZ(0);
         -webkit-overflow-scrolling: touch;
         height: calc(100% + 1px);

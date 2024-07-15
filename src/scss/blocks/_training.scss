@@ -93,7 +93,7 @@
         gap: 10px;
     }
     @include mediaMobile {
-        overflow-x: auto;
+        overflow-x: scroll;
         transform: translateZ(0);
         -webkit-overflow-scrolling: touch;
         height: calc(100% + 1px);
