@@ -145,12 +145,12 @@
     display: none;
 }
 
-@include mediaMobile {
+@include mediaTablet {
     .select-menu {
         position: relative;
         max-width: 100%;
         margin-bottom: 20px;
-        z-index: 4;
+        z-index: 8;
     }
     .select-menu .select-btn {
         position: relative;

@@ -227,10 +227,10 @@ const sliders = function() {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.2,
             },
             540: {
-                slidesPerView: 2.5,
+                slidesPerView: 2.4,
             },
             767: {  
                 slidesPerView: 3,
