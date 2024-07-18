@@ -268,6 +268,32 @@ const sliders = function() {
         }
     });
 
+    const teamSwiper = new Swiper(".team__list", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        scrollbar: {
+            el: ".team-swiper-scrollbar",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1.2,
+                freeMode: {
+                    enabled: true,
+                },
+            },
+            450: {
+                slidesPerView: 1.6,
+            },
+            768: {  
+                slidesPerView: 2.2,
+                FreeMode: false,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
     
 
     
