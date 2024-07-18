@@ -139,6 +139,10 @@
     }
 }
 
+.tns-inner {
+    overflow: hidden;
+}
+
 .objects #tns2 > .tns-item {
     @include mediaMobile {
         padding-right: 0 !important;
@@ -148,14 +152,8 @@
 .objects .tns-controls {
     top: -40px;
     @include mediaTablet {
-        // position: absolute;
-        // bottom: 50%;
-        // transform: translateY(50%);
-        // left: -2%;
         top: -60px;
-        // width: 104%;
         justify-content: space-between;
-        // z-index: 2;
     }
     @include mediaMobile {
         top: -250px;

@@ -172,8 +172,6 @@ const sliders = function() {
     });
     
     
-    
-    
     let card = tns({
         container: `.card__slider`,
         items: 1,
@@ -317,11 +315,12 @@ const sliders = function() {
             },
             1024: {
                 slidesPerView: 4,
-                FreeMode: false,
+                freeMode: false,
             }
         }
     });
     
+
 }
 
 export default sliders;
