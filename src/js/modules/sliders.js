@@ -1,3 +1,4 @@
+import { FreeMode } from 'swiper/modules';
 import { tns } from 'tiny-slider';
 
 const sliders = function() {
@@ -46,41 +47,41 @@ const sliders = function() {
         }
     }
     
-    let trainingSlider = tns({
-        container: `.training__slider`,
-        items: 2,
-        slideBy: 1,
-        // gutter: 20,
-        mouseDrag: true,
-        swipeAngle: false,
-        speed: 400,
-        arrowKeys: true,
-        loop: false,
-        controlsText: [
-            `<svg class="icon icon--chevron-left">
-                <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
-            </svg>`,
-            `<svg class="icon icon--chevron-right">
-                <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
-            /svg>`,
-        ],
-        "responsive": {
-            "320": {
-            //   "items": 1,
-            //   "controls": true,
-                "disable": true,
-            },
-            "450": {
-                "items": 1,
-                "controls": true,
-                "disable": false,
-            },
-            "768": {
-                "items": 2,
-            }
+    // let trainingSlider = tns({
+    //     container: `.training__slider`,
+    //     items: 2,
+    //     slideBy: 1,
+    //     // gutter: 20,
+    //     mouseDrag: true,
+    //     swipeAngle: false,
+    //     speed: 400,
+    //     arrowKeys: true,
+    //     loop: false,
+    //     controlsText: [
+    //         `<svg class="icon icon--chevron-left">
+    //             <use href="img/svgsprite/sprite.symbol.svg#chevron-left"></use>
+    //         </svg>`,
+    //         `<svg class="icon icon--chevron-right">
+    //             <use href="img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+    //         /svg>`,
+    //     ],
+    //     "responsive": {
+    //         "320": {
+    //         //   "items": 1,
+    //         //   "controls": true,
+    //             "disable": true,
+    //         },
+    //         "450": {
+    //             "items": 1,
+    //             "controls": true,
+    //             "disable": false,
+    //         },
+    //         "768": {
+    //             "items": 2,
+    //         }
 
-          },
-    });
+    //       },
+    // });
     
     let objectsSlider = tns({
         container: `.objects__slider`,
@@ -234,6 +235,35 @@ const sliders = function() {
             },
             767: {  
                 slidesPerView: 3,
+            }
+        }
+    });
+
+    const trainingSwiper = new Swiper(".training__list", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-btn-next",
+            prevEl: ".swiper-btn-prev",
+        },
+        scrollbar: {
+            el: ".training-swiper-scrollbar",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                spaceBetween: 10,
+                slidesPerView: 1.2,
+                freeMode: {
+                    enabled: true,
+                },
+            },
+            450: {
+                slidesPerView: 1,
+                FreeMode: false,
+            },
+            600: {  
+                slidesPerView: 2,
             }
         }
     });

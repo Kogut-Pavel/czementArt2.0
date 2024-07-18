@@ -16,6 +16,7 @@
 }
 
 .training__inner {
+    position: relative;
     margin-top: 46px;
     display: grid;
     grid-template: auto / 1fr 2fr;
@@ -32,7 +33,7 @@
 }
 
 .training__inner .item {
-    min-height: 352px;
+    min-height: 340px;
     @include mediaLaptop {
         min-height: 240px;
     }
@@ -85,33 +86,69 @@
 }
 
 .training__list {
+    width: 100%;
     position: relative;
     display: flex;
-    gap: 20px;
     align-items: stretch;
     @include mediaTablet {
-        gap: 10px;
     }
     @include mediaMobile {
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-        gap: 10px;
         padding-bottom: 20px;
 
         &::-webkit-scrollbar {
             height: 4px;
-
         }
         &::-webkit-scrollbar-track {
             position: absolute;
             background: rgba(41, 41, 41, 0.2);
             border-radius: 13px;
-
         }
         &::-webkit-scrollbar-thumb {
             background: #292929;
             border-radius: 13px;
         }
+    }
+}
+
+.training-swiper-scrollbar {
+    display: none;
+    @include mediaMobile {
+        display: block;
+        background: rgba(41, 41, 41, 0.2);
+        border-radius: 13px;
+    }
+}
+
+.training__list .swiper-wrapper {
+    height: auto;
+}
+
+.training-swiper-btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include mediaMobile {
+        display: none;
+    }
+}
+
+.training .swiper-btn-prev,
+.training .swiper-btn-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background: var(--accent);
     }
 }
 
@@ -160,7 +197,7 @@
         height: 62px;
         z-index: 4;
 
-        @include mediaMobile {
+        @include mediaTablet {
             width: 70px;
             height: 48px;
             border-radius: 18px;
@@ -177,7 +214,7 @@
     left: 50%;
     z-index: 5;
     transform: translate(-50%, -50%);
-    @include mediaMobile {
+    @include mediaTablet {
         width: 24px;
         height: 24px;
     }
@@ -194,33 +231,6 @@
 .training__card h4 {
     line-height: 130%;
     text-wrap: wrap;
-}
-
-.tns-ovh {
-    overflow-x: hidden;
-    @include mediaMobile {
-        overflow-x: visible;
-    }
-}
-
-.training .tns-controls {
-    top: unset;
-    bottom: -90px;
-
-    @include media-L-Laptop {
-        bottom: -80px;
-    }
-    @include mediaLaptop {
-        bottom: -70px;
-    }
-    @include mediaTablet {
-        position: absolute;
-        bottom: 50%;
-        left: -2%;
-        width: 104%;
-        justify-content: space-between;
-        z-index: 2;
-    }
 }
 
 .training__footer {
