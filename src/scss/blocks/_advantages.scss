@@ -5,33 +5,50 @@
 }
 
 .advantages__inner {
-    display: grid;
-    grid-template: 599px / 1fr 1fr 1fr;
+    display: flex;
+    align-items: stretch;
+    min-height: 560px;
+    height: 100%;
     gap: 10px;
 
     @include media-L-Laptop {
-        grid-template: 440px / 1fr 1fr 1fr;
+        min-height: 400px;
     }
     @include mediaLaptop {
-        grid-template: 360px / 1fr 1fr 1fr;
+        min-height: 360px;
     }
     @include mediaTablet {
-        display: flex;
-        align-items: stretch;
-        flex-direction: row;
-        overflow-x: scroll;
-        transform: translateZ(0);
-        -webkit-overflow-scrolling: touch;
-        height: calc(100% + 1px);
+        min-height: 280px;
+        // overflow-x: scroll;
+        // -webkit-overflow-scrolling: touch;
     }
 }
 
+
+.advantages__inner .swiper-wrapper {
+    height: auto;
+}
+
+// .swiper {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     background: #fff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
 .advantages__card {
-    position: relative;
     padding: 84px 79px;
     background-color: var(--section-bg);
     border-radius: 40px;
     overflow: hidden;
+    
     @include media-L-Laptop {
         padding: 32px;
     }
@@ -39,15 +56,14 @@
         padding: 24px;
     }
     @include mediaTablet {
-        min-width: 300px;
+        // min-width: 300px;
         width: 100%;
-        min-height: 340px;
         padding: 32px;
         border-radius: 32px;
     }
     @include mediaMobile {
-        min-width: 240px;
-        min-height: 280px;
+        // min-width: 240px;
+        // min-height: 280px;
     }
 }
 

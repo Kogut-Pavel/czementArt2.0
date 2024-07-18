@@ -94,18 +94,19 @@
     }
     @include mediaMobile {
         overflow-x: scroll;
-        transform: translateZ(0);
         -webkit-overflow-scrolling: touch;
-        height: calc(100% + 1px);
         gap: 10px;
         padding-bottom: 20px;
+
         &::-webkit-scrollbar {
             height: 4px;
+
         }
         &::-webkit-scrollbar-track {
             position: absolute;
             background: rgba(41, 41, 41, 0.2);
             border-radius: 13px;
+
         }
         &::-webkit-scrollbar-thumb {
             background: #292929;
@@ -197,6 +198,9 @@
 
 .tns-ovh {
     overflow-x: hidden;
+    @include mediaMobile {
+        overflow-x: visible;
+    }
 }
 
 .training .tns-controls {

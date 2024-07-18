@@ -95,9 +95,7 @@
         flex-direction: row;
         padding-bottom: 20px;
         overflow-x: scroll;
-        transform: translateZ(0);
         -webkit-overflow-scrolling: touch;
-        height: calc(100% + 1px);
         &::-webkit-scrollbar {
             height: 4px;
         }
@@ -133,6 +131,7 @@
         min-height: 165px;
         min-width: 220px;
         width: 220px;
+        // height: calc(100% + 1px);
     }
 }
 

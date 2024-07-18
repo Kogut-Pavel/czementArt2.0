@@ -54,6 +54,12 @@
     }
 }
 
+// .team__list-wrapper {
+//     @include mediaMobile {
+//         width: calc(50% + 50vw);
+//     }
+// }
+
 .team__list {
     position: relative;
     display: grid;
@@ -72,10 +78,9 @@
     @include mediaMobile {
         flex-direction: row;
         overflow-x: scroll;
-        transform: translateZ(0);
         -webkit-overflow-scrolling: touch;
-        height: calc(100% + 1px);
         padding-bottom: 20px;
+        
         &::-webkit-scrollbar {
             height: 4px;
         }
