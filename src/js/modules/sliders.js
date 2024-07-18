@@ -295,7 +295,32 @@ const sliders = function() {
         }
     });
     
-
+    const contactsSwiper = new Swiper(".contacts__list", {
+        spaceBetween: 10,
+        scrollbar: {
+            el: ".contacts-swiper-scrollbar",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1.2,
+                freeMode: {
+                    enabled: true,
+                },
+            },
+            450: {
+                slidesPerView: 1.6,
+            },
+            768: {  
+                slidesPerView: 2.2,
+                
+            },
+            1024: {
+                slidesPerView: 4,
+                FreeMode: false,
+            }
+        }
+    });
     
 }
 
