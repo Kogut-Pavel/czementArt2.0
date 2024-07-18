@@ -19,36 +19,19 @@
     }
     @include mediaTablet {
         min-height: 280px;
-        // overflow-x: scroll;
-        // -webkit-overflow-scrolling: touch;
     }
 }
-
 
 .advantages__inner .swiper-wrapper {
     height: auto;
 }
-
-// .swiper {
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//   .swiper-slide {
-//     text-align: center;
-//     font-size: 18px;
-//     background: #fff;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
 
 .advantages__card {
     padding: 84px 79px;
     background-color: var(--section-bg);
     border-radius: 40px;
     overflow: hidden;
-    
+
     @include media-L-Laptop {
         padding: 32px;
     }
@@ -56,14 +39,12 @@
         padding: 24px;
     }
     @include mediaTablet {
-        // min-width: 300px;
         width: 100%;
         padding: 32px;
         border-radius: 32px;
     }
     @include mediaMobile {
-        // min-width: 240px;
-        // min-height: 280px;
+        // max-width: 260px;
     }
 }
 

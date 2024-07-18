@@ -1,5 +1,4 @@
 import { tns } from 'tiny-slider';
-import Swiper from 'swiper';
 
 const sliders = function() {
     
@@ -219,31 +218,27 @@ const sliders = function() {
         ],
     });
 
-    // var swiper = new Swiper(".mySwiper", {
-    //     slidesPerView: 3,
-    //     spaceBetween: 30,
-    //     freeMode: true
-    //   });
-    const swiper = new Swiper(".advantages__inner", {
+
+    const advantagesSwiper = new Swiper(".advantages__inner", {
         slidesPerView: 3,
         spaceBetween: 10,
-        
+        freeMode: true,
         
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1,
-                autoplay: true,
+                slidesPerView: 1.5,
             },
             540: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
             },
             767: {  
                 slidesPerView: 3,
-                autoplay: false,
             }
         }
     });
+
+    
 
     
 }
