@@ -137,6 +137,11 @@
             width: 21px;
         }
     }
+    @include mediaMobile {
+        a {
+            height: 51px;
+        }
+    }
 }
 
 .cta--mobile a {
