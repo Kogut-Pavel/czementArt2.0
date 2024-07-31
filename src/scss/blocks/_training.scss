@@ -59,6 +59,7 @@
 }
 
 .training__static img {
+    margin: 0 auto;
     width: 70%;
     height: auto;
     @include media-L-Laptop {
