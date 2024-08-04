@@ -116,6 +116,12 @@
     position: relative;
 }
 
+.catalog .tns-inner {
+    @include mediaMobile {
+        overflow: visible;
+    }
+}
+
 .tns-controls {
     position: absolute;
     right: 0;
